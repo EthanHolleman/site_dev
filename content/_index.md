@@ -1,0 +1,49 @@
++++
+title = "About Me"
+description = "Landing page for projects"
+date = "2019-07-01"
++++
+
+# About me
+
+I am a Ph.D student in the Integrative Genetic and Genomics (IGG) graduate group of
+the University of California, Davis. Briefly, I am interested in studying
+the mechanisms of complex gene expression regulation 
+using from both a computational and experiemntal perspectives. I am currently taking part in lab rotations and taking coursework.
+
+Before starting with IGG, I did work in Soybean genomics, X-ray crystallography, high-throughput marcomolecule crystalization, the last of which I am still actively
+involved in. For the full details of my current and previous projects head over
+to the Projects page. If you are short on time and / or would prefer brevity 
+you can download a copy of my current CV as a pdf, or view a markdown version 
+here. 
+
+Outside of research I enjoy learning about and building gadgets with microcontrolers
+and Raspberry Pi computers, fishing at Lake Beryessa and Putah Creek, biking
+around Davis, and [playing poker](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html).
+
+
+# About this site
+
+At this site you can find information about my current and past professional and
+personal projects. I will do my best to keep things as up to date as possible but there
+may be some lag time between this reality and the one you are experiencing. 
+
+Below is a summary of what you can find at each main section of the site.
+
+## Projects
+
+Long-from non-technical descriptions of past and present research mixed in with
+similar accounts of more personal projects. Read these to get an idea of what
+I have been working on in both academic and personal capacities. 
+
+## Posts
+
+Short blog-like entries on various topics I am interested in. Currently the most
+work in progress part of the site. 
+
+
+# Additional Information
+
+All content is licensed under the XXXX unless otherwise specified. 
+
+
