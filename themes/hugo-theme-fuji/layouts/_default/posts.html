@@ -2,8 +2,6 @@
 
 <div>{{.Content}}</div>
 
-{{.Site.Taxonomies.tags.blogs}}
-
 <!-- homepage range in all posts -->
 {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" "posts") }}
 {{ range $paginator.Pages }}

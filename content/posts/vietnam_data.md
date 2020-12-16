@@ -1,6 +1,6 @@
 ---
 title: "Data in Vietnam"
-date: 2019-11-22T13:49:27-08:00
+date: 2020-12-12
 tags: ['blogs', 'data wrangling']
 draft: true
 ---
