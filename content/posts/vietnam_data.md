@@ -1,11 +1,11 @@
 ---
-title: "Data in Vietnam"
+title: "Data and the Vietnam War"
 date: 2020-12-12
 tags: ['blogs', 'data wrangling']
 draft: true
 ---
 
-## Turing jungles into punchcards
+## Turing the jungle into punchcards
 
 During the early optimistic days of the summer 2020 quarantine I watched 
 Ken Burn's fantastic 10 part *18-hour* series on the Vietnam war. It is by far
@@ -13,7 +13,7 @@ the most accessible and compressive body of work on the subject. Burn's starts y
 off *pre-WWI* so you really get a comprehensive picture of things.
 
 One of the aspects of the war that fascinated me the most was the push by the 
-the then Secretary of Defense Robert McNamara to quantify as much of the war
+the then Secretary of Defense, Robert McNamara, to quantify as much of the war
 as was computationally possible. One of the most storage intensive of McNamara's
 efforts was the Hamlet Evaluation System, which attempted to quantify the degree
 to which ~12,000 small, rural Vietnamese villages had been pacified. A RAND
@@ -23,16 +23,16 @@ month. More than could have ever been useful.
 {{< figure src="/posts/images/doc.png"
 title="Example of data produced by the Hamlet Evaluation Program showing change in hamlet classifications over time">}}
 
-And this was the data produced by just one wartime quatification program. Even
-if the DoD had the raw 60s era computing power and army of FORTRAN programs
-that would be needed to wrangle it all the metric's themselves were questionable
+This was the data produced by just one wartime metrics program. Even
+if the DoD had the raw 60s era computing power and the army of FORTRAN programs
+that would be needed to wrangle it all the metrics themselves were questionable
 at best. One of the historians interviewed as apart of Burn's series said something 
 along the lines of "When you can't measure whats counts, you make what can count
 the measure".
 
 I was interested in actually seeing what that data looked like in its raw form.
 What where programmers of the era actually looking at and wrangling when some
-Army big-wig said "We need to be producing 90,000 pages of data a month". So I
+Army big-wig said "We need to be producing 90,000 pages of data a month"? So I
 did some googling and dug into a couple documents hosted my the National Archives
 to try and get a picture of what Vietnam looked like from the perspective of a
 punch card.
@@ -41,21 +41,30 @@ punch card.
 
 The degree of documentation relating to the Hamlet Evaluation System that
 survives to today is, somewhat unsurprisingly, extremely large. So picking one
-out to dive into was adminditly, a highly heurisitic process. 
+out to dive into was a less than analytical process. 
 
 A came across the [Phung Hoang Mangement Information System](https://catalog.archives.gov/id/17364134), 
 PHMIS, (MACV Document Number DAR R33 CM-01A, March 1972) which was later replaced with
 the National Police Infrastructure Analysis Subsystem; a database cataloging 
 the personal information of Vietnamese who where suspected of or convicted of
-aiding communist forces as part of the Hamlet Evaluation Program. From what I
-can tell this database and its offspring also have potential ties to the
-controversial [Phenoix program](https://en.wikipedia.org/wiki/Phoenix_Program)
-a CIA headed counter-insurgency program that amoung other technqiues employed
+aiding communist forces as part of the Hamlet Evaluation Program. This entry was
+interesting to me because it had both the tecnhical documentation needed to
+actually make sense of the data and because of its historical context. The 
+PHMIS was used as a catalogue for the operations of the 
+[Phoenix program](https://en.wikipedia.org/wiki/Phoenix_Program)
+a CIA headed counter-insurgency operation that among other techniques, employed
 torture and assassination to identify and kill Viet Cong and Viet Cong 
-collaborators.
+collaborators. 
 
 {{< figure src="/posts/images/flowchart.png"
-title="from Phung Hoang Mangement Information System March 1972 Report">}}
+title="Flowchart depicting data schema of the Phung Hoang Mangement Information System, March 1972 report">}}
+
+The Phoenix Program was, deservingly, a locus of controversy within a storm of
+controversies surrounding US operations in Vietnam, eventually building to a
+series of congressional hearings in 1971. The data stored in this National Archive
+entry, in some way, is the bureaucratic reflection of all the individual stories
+and lives impacted by this corner of red-scare induced mania. 
+
 
 ## Getting into the data
 
@@ -165,21 +174,183 @@ deliminated. A sample of which is shown below.
 ![](/posts/images/fields.png)
 
 So now it is just a matter of creating a function that will cut up a record
-based on the fields defined in this table. This was pretty boring and involved
-some manual formatting. I used the code below to pull out the text from the table
-and then went through adding line breaks, removing irrelevant info and correcting
-errors in data element names.
+based on the fields defined in this table. I first used `PyPDF2` to pull out
+the text from the table I was interested in.
 
 ```python
 import PyPDF2
 pdf = open('222.1DP.pdf', 'rb')  
 reader = PyPDF2.PdfFileReader(pdf)  
 pages = ''.join([reader.getPage(p).extractText() for p in [20, 21, 22, 23]])
-print(pages)
+print(pages[:100])
+```
+Which looks like this
+
+```
+INPUT, OUTPUT, MASTER DEFINITION (Excluding Reports) I. PAGE 1 OF 4 5. DATE PREPARED 9/1/77 2. NAME 
 ```
 
-But after all that I ended up with this beautiful dictionary that can be used
-to break up the raw data into a delimitated format. 
+Its a jumble but thankfully, there are some patterns that can be exploited to reduce manual work
+required to get everything correctly formatted, specifically after the range of
+each field it is followed by either an `A` or a `N`, signifying if that data is
+numeric or alphanumeric. We can use this pattern in a regex to roughly pull out
+what we need.
+
+```python
+import re
+finder = re.compile(r'(.{1,7}) (\d+-?\d*) (N|A)')
+matches = finder.findall(pages)
+for m in matches[:10]:
+    print(m[0], m[1])
+```
+
+Which prints
+```
+. PROVe 1-2
+SE'O'fO 3-8
+6 ATLRG 9
+ !XX)RP 10
+DPROV 11-12
+. DDIsr 13-14
+2 DVllL 15-16
+. IDATX 23-26
+ BDA'IX 33-36
+POORP 37
+```
+
+While this is by no means perfect it is looking a lot better. From here I just
+cleaned things up manually, eventually creating a text file that looks like this
+
+```
+PROVC 1 2
+SEQNO 3 8
+ATLRG 9
+DOORP 10
+
+.
+.
+.
+
+ALTVCI 239 247
+MOM 248 271
+POP 272 295
+ALIAS 296 319
+```
+
+Now we can finally create the function that will create the csv file we are
+after!
+
+First I created a dictionary that could be used to slice each "row" of the
+raw data.
+
+```python
+import csv
+table = "parse_table.txt"
+spacing_dict = {
+    r[0]: [int(i) for i in r[1:]] for r in csv.reader(open(table), delimiter=' ')
+    }
+
+# adjust for base 1 to base 0 indexing
+for field in spacing_dict:
+    spacing_dict[field][0] -= 1
+
+# append next index for single index fields for easier slicing in next step
+for field_name in spacing_dict:
+    if len(spacing_dict[field_name]) == 1:
+        val = spacing_dict[field_name][0]
+        spacing_dict[field_name].append(val+1)
+```
+Then I created a function that would actual do the slicing on each raw data
+row and return a dictionary with the field names as keys and the data in each
+fields respective domain as values.
+
+```python
+def raw_data_to_field_dict(raw_data, spacing_dict):
+    field_dict = {}
+    for field_name in spacing_dict:
+        start, end = spacing_dict[field_name]
+        field_dict[field_name] = raw_data[start:end]
+    return field_dict
+```
+
+Now we can test this out to see if we can write our csv file.
+
+```python
+def write_csv_from_raw_data(raw_data, spacing_dict, outname='data.csv'):
+    csv_rows = []
+    for i in range(0, len(data), step):
+        row = data[i:i+step]
+        csv_rows.append(raw_data_to_field_dict(row, spacing_dict))
+    
+    with open(outname, 'w') as handle:
+        writer = csv.DictWriter(handle, fieldnames=spacing_dict.keys())
+        writer.writeheader()
+        writer.writerows(csv_rows)
+```
+
+The function executes without incident and writes a csv file that looks like
+the sample below.
+
+```
+PROVC	SEQNO	ATLRG	DOORP	DPROV	DDIST	DVllL
+1	5			7	0	0
+1	11			1	2	0
+1	12			1	2	0
+```
+
+Much easier to read!
+
+# Visualizing 
+
+Now that the data is in a more accessible format we can start to take examine
+what it looks like using R and the `ggplot2` package.
+
+## Arrests by year
+
+![](/posts/images/arrests_by_year.png)
+
+Unsurprisingly most arrests took place between 70 and 72. Although there were
+some extreme early outliers in 1900 and 1903 which are likely data entry errors.
+
+## Individual statuses
+
+Fields 126-131 contain the `OPINFO` information, which the technical documentation
+describes as a group containing the following information, again as described by
+the technical documentation.
+
+ - `STATUS`: The status of an individual.
+ - `TARGET`: The type of target, general of specific.
+ - `LEVEL`: The level of operation. Corps, Division, etc.
+ - `FORCE`: Type of action force which was responsible for the neutralization.
+ - `DEFAC`: Place of detention.
+
+ This is a lot of interesting information. These values are all stored as one
+ letter codes and the documentation provides tables for translating them, like
+ the one below which is used to translate the `STATUS` code.
+
+
+![](/posts/images/table1.png)
+
+
+First we can look at just statuses of all individuals in the database to get
+as sense for what was happening to the people targeted by Project Phoenix.
+
+![](/posts/images/ind_status.png)
+
+While most of the ultimate fates for the individuals in the PHMIS database
+are not recorded, the usual response is clear. 
+
+
+
+Some other things that were a bit curious was what "Captured" and "Rallied"
+statuses actually mean. Except in the case where an individual was killed without
+additional processing they would presumably need to be captured. 
+
+
+
+
+
+
 
 
 

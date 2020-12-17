@@ -19,11 +19,11 @@ install.packages("glmnet")
 library(glmnet)
 ```
 
-But when you put `library(glmnet)` in a batch script I got an error that the package could not be found. 
+But  then calling the running the same script from a batch file fails to import the library.
 
 I tried multiple possible fixes with no success
 until I was tipped of by a current lab member
-about the magic words.
+about the magic word.
 
 ```
 aklog
@@ -34,7 +34,3 @@ the SBATCH lines in the script changed something that allowed SLURM to see the
 R packages in my user directory.
 
 It is not currently documented, but when it hopefully is I will link to the page here.
-
-
-
-

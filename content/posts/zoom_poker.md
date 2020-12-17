@@ -29,7 +29,7 @@ like this.
 You can deal cards to each player using the *Deal* button
 and deal the community cards using the respective button. *Empty* sets the pot to 0, *Reset* sets the pot to 0 and all player stacks to 100 and *Reveal* shows all players cards.
 
-The only thing that is a little clunky is betting. Automations allow you to add or subtract a value from a counter but not read from the state of a counter so you cannot create a button that adds the current value in the pot to a player's stack - this needs to be done by hand. 
+The only thing that is a little clunky is betting. Automatons allow you to add or subtract a value from a counter but not read from the state of a counter so you cannot create a button that adds the current value in the pot to a player's stack - this needs to be done by hand. 
 
 ![](/posts/images/table_hand.png)
 
@@ -39,11 +39,11 @@ keeping your pocket cards secret from everyone else
 possible. 
 
 If you don't want to set up your own room from scratch
-you can [download the room I set up](/posts/docs/playingcards-io-export.pcio) and then
+you can [download the room I set up](/posts/docs/playingcards-io-export.zip) and then
 load from that file.
 
 No Poker is actually done over Zoom, it is only used as the 
 video call medium. 
 
-It definietly look a couple hands to get used to using the
+It definitely look a couple hands to get used to using the
 interface but once things got going it worked really well.
