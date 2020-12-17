@@ -341,13 +341,21 @@ While most of the ultimate fates for the individuals in the PHMIS database
 are not recorded, the usual response is clear. 
 
 
-
 Some other things that were a bit curious was what "Captured" and "Rallied"
 statuses actually mean. Except in the case where an individual was killed without
 additional processing they would presumably need to be captured. 
 
+![](/posts/images/status_by_force.png)\
 
 
+![](/posts/images/captures_by_date_by_force.png)
+
+Here I was basically just playing around with this data, but there are
+potential for actual insights. 
+
+If you would like to play around with the data yourself you can
+download the csv file I produced [from this link](/posts/data/PHMIS_data.csv). You can also download
+all the documentation I referenced from the national archives entry. 
 
 
 
