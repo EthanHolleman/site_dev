@@ -11,14 +11,13 @@ the University of California, Davis. Briefly, I am interested in studying
 the mechanisms of complex gene expression regulation 
 using from both a computational and experiemntal perspectives. I am currently taking part in lab rotations and taking coursework.
 
-Before starting with IGG, I did work in Soybean genomics, X-ray crystallography, high-throughput marcomolecule crystalization, the last of which I am still actively
+Before starting with IGG, I did work in Soybean genomics, X-ray crystallography, high-throughput macromolecule crystallization, the last of which I am still actively
 involved in. For the full details of my current and previous projects head over
 to the Projects page. If you are short on time and / or would prefer brevity 
-you can download a copy of my current CV as a pdf, or view a markdown version 
-here. 
+you can download a copy of my [current CV](/cv/holleman_cv.pdf).
 
-Outside of research I enjoy learning about and building gadgets with microcontrolers
-and Raspberry Pi computers, fishing at Lake Beryessa and Putah Creek, biking
+Outside of research I enjoy learning about and building gadgets with micro-controllers
+and [Raspberry Pi computers](https://github.com/EthanHolleman/fridge_master_2000), fishing at Lake Beryessa and [Putah Creek](/posts/putah_fishing/), biking
 around Davis, and [playing poker](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html).
 
 
@@ -39,11 +38,6 @@ I have been working on in both academic and personal capacities.
 ## Posts
 
 Short blog-like entries on various topics I am interested in. Currently the most
-work in progress part of the site. 
-
-
-# Additional Information
-
-All content is licensed under the XXXX unless otherwise specified. 
+work in progress part of the site.
 
 

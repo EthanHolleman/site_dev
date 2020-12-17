@@ -121,6 +121,10 @@ paginate = 10
     url = "/posts/"
     weight = 3
   [[menu.nav]]
+    name = "Download CV"
+    url = "/cv/Holleman_CV.pdf"
+    weight = 4
+  [[menu.nav]]
     name = "Search"
     url = "/search/"
     weight = 4
