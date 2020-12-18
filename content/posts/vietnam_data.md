@@ -2,7 +2,7 @@
 title: "Data and the Vietnam War"
 date: 2020-12-12
 tags: ['blogs', 'data wrangling']
-draft: true
+draft: false
 ---
 
 ## Turing the jungle into punchcards
@@ -24,8 +24,8 @@ month. More than could have ever been useful.
 title="Example of data produced by the Hamlet Evaluation Program showing change in hamlet classifications over time">}}
 
 This was the data produced by just one wartime metrics program. Even
-if the DoD had the raw 60s era computing power and the army of FORTRAN programs
-that would be needed to wrangle it all the metrics themselves were questionable
+if the DoD had the raw 60s era computing power and the army of FORTRAN programers
+that would have been needed to wrangle it all, the metrics themselves were questionable
 at best. One of the historians interviewed as apart of Burn's series said something 
 along the lines of "When you can't measure whats counts, you make what can count
 the measure".
@@ -48,12 +48,12 @@ PHMIS, (MACV Document Number DAR R33 CM-01A, March 1972) which was later replace
 the National Police Infrastructure Analysis Subsystem; a database cataloging 
 the personal information of Vietnamese who where suspected of or convicted of
 aiding communist forces as part of the Hamlet Evaluation Program. This entry was
-interesting to me because it had both the tecnhical documentation needed to
+interesting to me because it had both the technical documentation needed to
 actually make sense of the data and because of its historical context. The 
 PHMIS was used as a catalogue for the operations of the 
 [Phoenix program](https://en.wikipedia.org/wiki/Phoenix_Program)
 a CIA headed counter-insurgency operation that among other techniques, employed
-torture and assassination to identify and kill Viet Cong and Viet Cong 
+torture and assassination to identify and kill Viet-Cong and Viet-Cong 
 collaborators. 
 
 {{< figure src="/posts/images/flowchart.png"
@@ -100,7 +100,7 @@ the command
 pip install ebcdic
 ```
 
-and have working EBCDIC encodings to work with right in Python. And the
+and have a number of EBCDIC encodings to work with right in Python. And the
 secrets of `RG330` can be revealed in their UTF-8 glory with the Python
 snippet below.
 
@@ -129,10 +129,10 @@ gives
 01000005A207000069120H691270122E70125041100002CB  34KKKKK5C12070103001BM########################00000ä    00000ä                           00000ä    00000ä             00000ä    00000ä               00000ä    00000ä               0ä               ########################################################################
 ```
 
-which as a first attempt does not actually look that bad. The NA documentation notes
-that a personaly identifing information in the database has been redacted for public use which
-is showing up as the `#` characters. A memo from December 10, 1992 states the
-following.
+which as a first attempt does not actually look that bad. The National Archives
+documentation notes that a personally identifying information in the database 
+has been redacted for public use - which is showing up as the `#` characters. 
+A memo from December 10, 1992 states the following.
 
 ![](/posts/images/memo.png)
 
@@ -158,18 +158,24 @@ for i in range(0, len(data), 319):
         start, end = redacted_region
         assert set(record[start:end]).pop() == "#"
 ```
-Which also does not produce any assertion errors so things are looking pretty
+Which also does not produce any assertion errors, so things are looking pretty
 good at this point. The two items of main concern are the `ä` characters and the
-large amount of whitespace. Some more investigation revealved the reason for the
+large amount of whitespace. Some more investigation revealed the reason for the
 whitespace. The document was originally stored in a variable record length format
 and was converted to a fixed length by the National Archives at some point. Relevant
 documentation in its original photocopy glory below.
 
 ![](/posts/images/blanks.png)
 
+While I am not as certain about the cause of the diacritic a character, I believe
+it is due to the use of [zoned decimal formatting](https://en.wikipedia.org/wiki/Binary-coded_decimal#Zoned_decimal) in some of the fields. The
+documentation notes its use in general, but does not provide specific indices.
+Since it is not affecting the integrity of the actual record parsing I am
+ignoring apparent zoned decimal fields for the time being. 
+
 The technical documentation also defines the range of each field within a
 record that we can use to make the final output file more explicitly
-deliminated. A sample of which is shown below. 
+delimitated. A sample of which is shown below. 
 
 ![](/posts/images/fields.png)
 
@@ -191,9 +197,9 @@ INPUT, OUTPUT, MASTER DEFINITION (Excluding Reports) I. PAGE 1 OF 4 5. DATE PREP
 ```
 
 Its a jumble but thankfully, there are some patterns that can be exploited to reduce manual work
-required to get everything correctly formatted, specifically after the range of
+required to get everything correctly formatted. Specifically after the range of
 each field it is followed by either an `A` or a `N`, signifying if that data is
-numeric or alphanumeric. We can use this pattern in a regex to roughly pull out
+numeric or alphanumeric. We can use this pattern in a [regex](https://en.wikipedia.org/wiki/Regular_expression) to roughly pull out
 what we need.
 
 ```python
@@ -260,9 +266,9 @@ for field_name in spacing_dict:
         val = spacing_dict[field_name][0]
         spacing_dict[field_name].append(val+1)
 ```
-Then I created a function that would actual do the slicing on each raw data
+Then I created a function that would actually do the slicing on each raw data
 row and return a dictionary with the field names as keys and the data in each
-fields respective domain as values.
+field's respective domain as values.
 
 ```python
 def raw_data_to_field_dict(raw_data, spacing_dict):
@@ -337,17 +343,47 @@ as sense for what was happening to the people targeted by Project Phoenix.
 
 ![](/posts/images/ind_status.png)
 
-While most of the ultimate fates for the individuals in the PHMIS database
-are not recorded, the usual response is clear. 
+While the `STATUS` field is missing for about a third of individuals in the
+database, clearly the most common outcomes were "captured", "killed" or "rallied". While
+"captured" and "killed" are relatively unambiguous, there is not further explanation
+of what "rallied" refers to that I could find. 
+
+This same data can also be broken down in a few interesting ways. We can plot
+the same `STATUS` data but split into into subplots based on the `FORCE` that
+was responsible for the (coldly bureaucratically termed) neutralization. 
+
+![](/posts/images/status_by_force.png)\
+
+Using this plot, we can see that "Regional Forces" where the most active group, 
+with "ARVN Main Forces", "Popular Forces", "Provincial Reconnaissance Unit" 
+making up much of the remainder. 
+
+This plot also shows that US Forces, at least according to this database, where
+not as nearly as directly involved as organizations that can be grouped into
+the "South Vietnamese Allies" category.
+
+Lastly, I was interested in what this program looked like overtime. Individuals
+that were captured (opposed to killed outright) usually had a value in their
+`SADATX` field: "Date of sentence action in YYMM order". I used this as a proxy
+for a given group's activity over time, granted this is would be easily skewed in
+one group was tasked explicitly with capturing while another was tasked with killing.
+Plotting `SADATX` vs the number of individuals for all groups listed by the `FORCES` field
+produced the plot below.
+
+![](/posts/images/captures_by_date_by_force.png)
 
 
+# There is still much to be said
 
-Some other things that were a bit curious was what "Captured" and "Rallied"
-statuses actually mean. Except in the case where an individual was killed without
-additional processing they would presumably need to be captured. 
+I only looked at a small part of this dataset, but there is still much more to
+be gleaned. If you would like to play around with the data yourself you can
+download the csv file I produced [from this link](/posts/data/PHMIS_data.csv).
+You can also download all the documentation I referenced from the 
+National Archives entry [at this link](https://catalog.archives.gov/id/17364134).
 
+Thank you for reading.
 
-
+-eth
 
 
 
