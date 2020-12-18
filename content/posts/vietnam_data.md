@@ -5,7 +5,7 @@ tags: ['blogs', 'data wrangling']
 draft: false
 ---
 
-## Turing the jungle into punchcards
+## Turning the jungle into punch cards
 
 During the early optimistic days of the summer 2020 quarantine I watched 
 Ken Burn's fantastic 10 part *18-hour* series on the Vietnam war. It is by far
@@ -72,6 +72,8 @@ The PHMIS National Archive entry contains one main data file and some aggregated
 technical documentation. 
 
 - `RG330.PHMIS.P6972`: The actual binary data file. Refered to as `RG330`
+- `222.1SPA.pdf`: Historical background on the PHMIS
+- `222.1DP.pdf`: Technical documentation on format of `RG330`
 
 
 At first I was a bit lost as to where to start after thumbing through the technical
@@ -365,8 +367,8 @@ the "South Vietnamese Allies" category.
 Lastly, I was interested in what this program looked like overtime. Individuals
 that were captured (opposed to killed outright) usually had a value in their
 `SADATX` field: "Date of sentence action in YYMM order". I used this as a proxy
-for a given group's activity over time, granted this is would be easily skewed in
-one group was tasked explicitly with capturing while another was tasked with killing.
+for a given group's activity over time, granted this would be easily skewed in
+the case one group was tasked explicitly with capturing while another was tasked with killing.
 Plotting `SADATX` vs the number of individuals for all groups listed by the `FORCES` field
 produced the plot below.
 

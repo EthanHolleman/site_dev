@@ -35,8 +35,8 @@ paginate = 10
   #subTitle = "Ethan Holleman's personal website."
   summaryLength = 100
 
-  # Source URL of the website, will appear in the footer
-  sourceURL = "https://github.com/itsme/my_blog"
+  # Source URL of the websmy_blogite, will appear in the footer
+  sourceURL = "https://github.com/EthanHolleman/ethanholleman.github.io"
 
   # Word counter and read time indicator in post metadata
   showWordCounter = false

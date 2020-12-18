@@ -12,14 +12,20 @@ hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 cd public
 
 # Add changes to git.
-git add .
+# git add .
 
-# Commit changes.
+# # Commit changes.
 msg="rebuilding site $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
-git commit -m "$msg"
+# git commit -m "$msg"
 
 # Push source and build repos.
-git push origin main
+# git push
+rm -r ../../ethanholleman.github.io/*
+cp -a . ../../ethanholleman.github.io/
+cd ../../ethanholleman.github.io/
+git add .
+git commit -m "$msg"
+git push

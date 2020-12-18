@@ -27,7 +27,7 @@
 <meta name="keywords" content="blogs, data wrangling" />
 
 <meta property="og:title" content="Data and the Vietnam War" />
-<meta property="og:description" content="Turing the jungle into punchcards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
+<meta property="og:description" content="Turning the jungle into punch cards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
 One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ethanholleman.github.io/posts/vietnam_data/" />
@@ -39,7 +39,7 @@ One of the aspects of the war that fascinated me the most was the push by the th
 <meta name="twitter:image" content="https://ethanholleman.github.io/img/og.png"/>
 
 <meta name="twitter:title" content="Data and the Vietnam War"/>
-<meta name="twitter:description" content="Turing the jungle into punchcards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
+<meta name="twitter:description" content="Turning the jungle into punch cards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
 One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified."/>
 
 
@@ -95,7 +95,7 @@ One of the aspects of the war that fascinated me the most was the push by the th
     
     
     <div class="post-content markdown-body">
-        <h2 id="turing-the-jungle-into-punchcards">Turing the jungle into punchcards</h2>
+        <h2 id="turning-the-jungle-into-punch-cards">Turning the jungle into punch cards</h2>
 <p>During the early optimistic days of the summer 2020 quarantine I watched
 Ken Burn&rsquo;s fantastic 10 part <em>18-hour</em> series on the Vietnam war. It is by far
 the most accessible and compressive body of work on the subject. Burn&rsquo;s starts you
@@ -157,6 +157,8 @@ and lives impacted by this corner of red-scare induced mania.</p>
 technical documentation.</p>
 <ul>
 <li><code>RG330.PHMIS.P6972</code>: The actual binary data file. Refered to as <code>RG330</code></li>
+<li><code>222.1SPA.pdf</code>: Historical background on the PHMIS</li>
+<li><code>222.1DP.pdf</code>: Technical documentation on format of <code>RG330</code></li>
 </ul>
 <p>At first I was a bit lost as to where to start after thumbing through the technical
 documentation. At first I naively tried to read <code>RG330</code> as UTF-8 but then
@@ -388,8 +390,8 @@ the &ldquo;South Vietnamese Allies&rdquo; category.</p>
 <p>Lastly, I was interested in what this program looked like overtime. Individuals
 that were captured (opposed to killed outright) usually had a value in their
 <code>SADATX</code> field: &ldquo;Date of sentence action in YYMM order&rdquo;. I used this as a proxy
-for a given group&rsquo;s activity over time, granted this is would be easily skewed in
-one group was tasked explicitly with capturing while another was tasked with killing.
+for a given group&rsquo;s activity over time, granted this would be easily skewed in
+the case one group was tasked explicitly with capturing while another was tasked with killing.
 Plotting <code>SADATX</code> vs the number of individuals for all groups listed by the <code>FORCES</code> field
 produced the plot below.</p>
 <p><img class="img-zoomable" src="/posts/images/captures_by_date_by_force.png" alt="" />
@@ -606,7 +608,7 @@ National Archives entry <a href="https://catalog.archives.gov/id/17364134" targe
             
             <span>&copy; 2020-2020
                 <a href="https://ethanholleman.github.io/">Ethan Holleman</a>
-                 | <a href="https://github.com/itsme/my_blog">Source code</a> 
+                 | <a href="https://github.com/EthanHolleman/ethanholleman.github.io">Source code</a> 
                 
             </span>
         </div>
