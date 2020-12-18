@@ -1,4 +1,4 @@
-baseURL = "https://example.com"
+baseURL = "https://ethanholleman.github.io/"
 title = "Ethan Holleman"
 
 theme = "hugo-theme-fuji"
@@ -32,7 +32,7 @@ paginate = 10
 
 [params]
   author = "Ethan Holleman" # You can also set author in post front matter individually
-  subTitle = "Ethan Holleman's personal website."
+  #subTitle = "Ethan Holleman's personal website."
   summaryLength = 100
 
   # Source URL of the website, will appear in the footer

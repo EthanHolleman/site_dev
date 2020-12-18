@@ -2,8 +2,13 @@
 title: "IMCA-CAT Summer Internship"
 date: 2019-11-22T13:49:27-08:00
 tags: ['APS', 'crystallography', 'research']
-draft: false
+draft: true
 ---
+
+
+
+
+
 
 What do the drugs we take actually do, at the cellular level, to out bodies? This can be an extemely diffcult question to answer, and one that the FDA does not require drug companies to when seeking approval for a new medicine (https://www.nature.com/articles/nm0410-347). 
 

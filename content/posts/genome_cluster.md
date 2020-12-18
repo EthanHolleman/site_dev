@@ -2,7 +2,7 @@
 title: "Using local R packages on UC Davis Genome Center cluster"
 date: 2020-11-03
 tags: ['programming']
-draft: true
+draft: false
 ---
 
 I ran into a few issues trying to figure out

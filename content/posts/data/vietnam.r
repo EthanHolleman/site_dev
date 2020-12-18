@@ -128,7 +128,6 @@ convert_date <- function(d){
 }
 
 
-
 table1 <- function(){
   
   list(

@@ -40,4 +40,10 @@ I have been working on in both academic and personal capacities.
 Short blog-like entries on various topics I am interested in. Currently the most
 work in progress part of the site.
 
+# Note
+
+This site is currently under construction.
+
+
+
 

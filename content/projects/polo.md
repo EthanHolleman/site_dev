@@ -86,7 +86,7 @@ crystallization images, but lack of a graphical interface and data management
 program made it largely inaccessibly to users without Python and or command
 line experience. Therefore the goal of my project was to produce a free, easy to use
 graphical interface for both HWI and non-HWI users that would integrate the MARCO
-model with the best features of existing image review software.
+model with the best features of existing image review software. 
 
 # Outcome
 
