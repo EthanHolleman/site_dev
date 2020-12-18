@@ -42,8 +42,7 @@ To grossly oversimplify, X-ray crystallography takes advantage of the small wave
 of X-rays and the repeating structure of protein crystals to "amplify" the 
 extremely small signal produced by a single molecule allowing researchers, along
 with the help of a lot of fast-fourier transforms to piece together the 3D structure
-of a protein with resolutions below 1.5 Å (angstroms). For more information
-on X-ray crystallography check out IMCA-cat summer internship.
+of a protein with resolutions below 1.5 Å (angstroms).
 
 {{< figure src="/projects/images/Lysozyme.jpg"
 title="Crystal structure of lysozyme as rendered by David Goodsell doi:10.2210/rcsb_pdb/mom_2000_9">}}
