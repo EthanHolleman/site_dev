@@ -15,7 +15,7 @@ defaultContentLanguage = "en"  # For HTML page, now support: en, zh-hans, zh-han
 summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
 paginate = 10
 
-# googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
+# googleAnalytics = "G-84NGXGRHE8" # Set your Google Analytics UA here
 
 [outputFormats]
   [outputFormats.SearchIndex]
@@ -32,7 +32,7 @@ paginate = 10
 
 [params]
   author = "Ethan Holleman" # You can also set author in post front matter individually
-  #subTitle = "Ethan Holleman's personal website."
+  # subTitle = "Ethan Holleman's personal website."
   summaryLength = 100
 
   # Source URL of the websmy_blogite, will appear in the footer
