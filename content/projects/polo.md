@@ -26,7 +26,8 @@ critical to the pathogens virulence.
 
 If you knew that spike protein looked like, at the atomic, level you could more
 easily design a small-molecule drug that would interrupt its "normal" interaction
-with the lung tissue receptor protein. Of course it is non-trivial to actually "look" at a protein. In fact, the wavelength of visible light is much larger than the atoms you are trying to peak at. 
+with the lung tissue receptor protein. Of course it is non-trivial to actually "look" at a protein. 
+In fact, the wavelength of visible light is much larger than the atoms you are trying to peak at. 
 
 To get around this problem a number of specialized techniques have been
 developed, the most commonly employed being X-ray crystallography (although keep your eye on
@@ -42,14 +43,19 @@ To grossly oversimplify, X-ray crystallography takes advantage of the small wave
 of X-rays and the repeating structure of protein crystals to "amplify" the 
 extremely small signal produced by a single molecule allowing researchers, along
 with the help of a lot of fast-fourier transforms to piece together the 3D structure
-of a protein with resolutions below 1.5 Å (angstroms). For more information
-on X-ray crystallography check out IMCA-cat summer internship.
+of a protein with resolutions below 1.5 Å (angstroms).
 
 {{< figure src="/projects/images/Lysozyme.jpg"
 title="Crystal structure of lysozyme as rendered by David Goodsell doi:10.2210/rcsb_pdb/mom_2000_9">}}
 
-The only problem is that actually growing these protein crystals. Doing so can
-be extremely difficult, labor intensive and comes with no guarantee of success.
+The only problem is that actually growing these protein crystals is 
+extremely challenging. There is currently no reliable way to predict the
+range of chemical conditions that might result in a successful crystallization due
+to the relatively chaotic nature of crystal growth. This often means even
+"homology" based approaches (protein X which is similar to protein Y so 
+conditions for protein X should work for Y) often fail. Overall, this often makes
+growing protein crystals a labor intensive ordeal with with no guarantee of success.
+
 In most cases this will involve researchers manually creating grids of
 chemical conditions mixed with different concentrations of protein in the
 hopes that one produces crystals. Additionally, these types of manual screens
