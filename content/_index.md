@@ -9,17 +9,21 @@ date = "2019-07-01"
 I am a Ph.D student in the Integrative Genetic and Genomics (IGG) graduate group of
 the University of California, Davis. Briefly, I am interested in studying
 the mechanisms of complex gene expression regulation 
-using from both a computational and experiemntal perspectives. I am currently taking part in lab rotations and taking coursework.
+using from both a computational and experimental perspectives. 
+I am currently taking part in lab rotations and coursework.
 
-Before starting with IGG, I did work in Soybean genomics, X-ray crystallography, high-throughput macromolecule crystallization, the last of which I am still actively
+Before starting with IGG, I did work in Soybean genomics, X-ray crystallography,
+and high-throughput macromolecule crystallization, the last of which I am still actively
 involved in. For the full details of my current and previous projects head over
-to the Projects page. If you are short on time and / or would prefer brevity 
-you can download a copy of my [current CV](/cv/holleman_cv.pdf).
+to the [Projects page]({{< ref "Projects" >}}). If you are short on time 
+and / or would prefer brevity you can download a copy of my 
+[current CV](/cv/holleman_cv.pdf).
 
 Outside of research I enjoy learning about and building gadgets with micro-controllers
-and [Raspberry Pi computers](https://github.com/EthanHolleman/fridge_master_2000), fishing at Lake Beryessa and [Putah Creek](/posts/putah_fishing/), biking
-around Davis, and [playing poker](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html).
-
+and [Raspberry Pi computers](https://github.com/EthanHolleman/fridge_master_2000), 
+fishing at Lake Beryessa and [Putah Creek](/posts/putah_fishing/), biking
+around Davis, and 
+[playing poker](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html).
 
 # About this site
 

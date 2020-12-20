@@ -364,7 +364,7 @@ This plot also shows that US Forces, at least according to this database, where
 not as nearly as directly involved as organizations that can be grouped into
 the "South Vietnamese Allies" category.
 
-Lastly, I was interested in what this program looked like overtime. Individuals
+Lastly, I was interested in what this program looked like over time. Individuals
 that were captured (opposed to killed outright) usually had a value in their
 `SADATX` field: "Date of sentence action in YYMM order". I used this as a proxy
 for a given group's activity over time, granted this would be easily skewed in
