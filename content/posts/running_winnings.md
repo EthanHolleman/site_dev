@@ -1,7 +1,7 @@
 ---
 title: "Poker Nights Running Results"
 date: 2020-12-18
-tags: ['poker']
+tags: ['poker', 'blogs']
 draft: false
 ---
 
