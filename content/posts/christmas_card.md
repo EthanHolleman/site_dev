@@ -1,6 +1,6 @@
 ---
 title: "2020 Christmas Card Bonus Pictures"
-date: 2020-20-03
+date: 2020-12-20
 tags: ['blogs', 'christmas card']
 draft: true
 ---
@@ -16,6 +16,8 @@ Taken right after move in.
 ![](/posts/images/IMG_6855.HEIC.png)
 
 ## Skys during the wildfires
+
+Those are not clouds.
 
 ![](/posts/images/IMG_6885.HEIC.png)
 
