@@ -28,6 +28,17 @@ Note this plot is log scale in the y-axis.
 
 Code used to make the above plots can be viewed [here](/posts/code/uk_cog.r).
 
+## 16 most prevalent UK COVID-19 lineages
+
+Density plots showing the number of genomes of the 16 most prevalent lineages
+detected by COG-UK.
+
+![](/posts/images/top_16_strains.png)
+
+[Cov-lineages](https://cov-lineages.org/lineages/lineage_B.1.177.html) has
+a lot of good information on all of these lineages, including `B.1.177` which
+has recently set off alarms as the new "mutant UK strain".
+
 
 
 
