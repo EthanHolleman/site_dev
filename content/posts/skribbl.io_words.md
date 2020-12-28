@@ -18,6 +18,10 @@ takes in subreddit names and a few other parameters and using the
 [Praw](https://praw.readthedocs.io/en/latest/) library retrieves the most
 commonly used words from the top comments of posts to a subreddit.
 
+Since subreddits are generally devoted to a specific topic you can easily
+create pseudo-themed word banks by pulling comments from a category of
+topics and selecting subreddits under that banner. 
+
 You can download the program from the [GitHub page](https://github.com/EthanHolleman/Rskribbl).
 
 ## Usage
@@ -103,7 +107,7 @@ be written to a separate text files.
 python run.py -r "DataHoarder" "Python" "arduino" -n 10 -mc 100
 ```
 
-## Or don't run the program
+## Or use pre-harvested words
 
 If you do not want to set up the program on your own computer I have already
 created lists of 25 most used words with 5 or more characters 
