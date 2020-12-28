@@ -113,8 +113,8 @@ If you do not want to set up the program on your own computer I have already
 created lists of 25 most used words with 5 or more characters 
 from top comments of the 100 most popular subreddits.
 
-You can download those files from the GitHib page here. Words are listed on a
-single line separated by command for easier input into 
+You can download those files from the [GitHib page here](https://github.com/EthanHolleman/Rskribbl/tree/main/100_popular_subreddits). 
+Words are listed on a single line separated by command for easier input into 
 
 **NOTE**
 
