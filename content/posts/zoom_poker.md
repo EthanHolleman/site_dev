@@ -5,6 +5,22 @@ tags: ['poker', 'blogs']
 draft: false
 ---
 
+# Update
+
+I recently found a number of `.io` type websites devoted specifically to poker
+(not sure why didn't think to search poker .io earlier) which get around the
+main issues of playing using `playingcards.io`.
+
+I would **highly**, **highly** recommend using [lipoker.io](https://lipoker.io/).
+It handles betting with shortcuts for bets based on pot or blind sizes, handles
+turns automatically and does not require a sign up.
+
+For Poker, lipoker is supporior in **every way** to [PlayingCards.io](https://playingcards.io/)
+due to being designed for this specific game. If for some reason you would
+still like to use [PlayingCards.io](https://playingcards.io/) continue reading,
+otherwise stop and use [lipoker.io](https://lipoker.io/). 
+
+
 Recently a few of my friends and I wanted to do virtual Poker
 night. We where not interested in playing for cash and so I started 
 looking around for an online platform to make it happen. 
