@@ -1,13 +1,14 @@
 ---
 title: "Using local R packages on UC Davis Genome Center cluster"
 date: 2020-11-03
-tags: ['programming']
+tags: ['programming', 'blogs', 'guides']
 draft: false
 ---
 
 I ran into a few issues trying to figure out
 how to run batch scripts on the Genome Center
-cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory. 
+cluster. One of the least documented and hardest to figure out was how to successfully 
+load R packages I had installed to my user directory. 
 
 For example I would start R and install a package I needed and load the library with
 no problem. 
