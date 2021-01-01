@@ -1,4 +1,4 @@
-baseURL = "https://ethanholleman.github.io/"
+baseURL = "http://ethanholleman.com"
 title = "Ethan Holleman"
 
 theme = "hugo-theme-fuji"

@@ -26,6 +26,6 @@ fi
 rm -r ../../ethanholleman.github.io/*
 cp -a . ../../ethanholleman.github.io/
 cd ../../ethanholleman.github.io/
-git add .
+git add -A
 git commit -m "$msg"
 git push
