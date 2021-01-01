@@ -37,12 +37,12 @@ Below is a summary of what you can find at each main section of the site.
 
 Long-from non-technical descriptions of past and present research mixed in with
 similar accounts of more personal projects. Read these to get an idea of what
-I have been working on in both academic and personal capacities. 
+I have been working on in both academic and personal capacities. Currently the most
+work in progress part of the site.
 
 ## Posts
 
-Short blog-like entries on various topics I am interested in. Currently the most
-work in progress part of the site.
+Short blog-like entries on various topics I am interested in.
 
 # Note
 

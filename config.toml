@@ -42,7 +42,7 @@ googleAnalytics = "G-84NGXGRHE8" # Set your Google Analytics UA here
   showReadTime = false
 
   # License in the footer
-  showLicenseInFooter = false
+  showLicenseInFooter = true
 
   # License at the end of each post
   showLicense = false
