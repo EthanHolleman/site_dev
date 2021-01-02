@@ -8,7 +8,7 @@
             {{ end }}
             <span>&copy; {{ with .Site.Params.copyrightStartYear }}{{ . }}-{{ end }}{{ now.Format "2006" }}
                 <a href="{{ .Site.BaseURL }}">{{ .Site.Params.author }}</a>
-                {{ with .Site.Params.sourceURL }} | <a href="{{ . }}">Source code</a> {{ end }} | <a href="{{ .Site.BaseURL }}privacy">Privacy policy</a>
+                {{ with .Site.Params.sourceURL }} | <a href="{{ . }}">Source code</a> {{ end }} | <a href="{{ .Site.BaseURL }}/privacy">Privacy policy</a>
                 
             </span>
         </div>
