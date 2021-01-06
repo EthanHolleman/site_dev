@@ -23,7 +23,7 @@ Outside of research I enjoy learning about and building gadgets with micro-contr
 and [Raspberry Pi computers](https://github.com/EthanHolleman/fridge_master_2000), 
 fishing at Lake Beryessa and [Putah Creek](/posts/putah_fishing/), biking
 around Davis, and 
-[playing poker](https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/game-theory/neumann.html).
+[playing poker]({{< ref "/tags/poker/" >}}).
 
 # About this site
 
