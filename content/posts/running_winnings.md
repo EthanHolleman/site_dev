@@ -5,6 +5,8 @@ tags: ['poker', 'blogs']
 draft: false
 ---
 
+Y axis of all plots are unit-less.
+
 ## Running stack sizes
 
 Shows each players cumulative stack over all nights played. 

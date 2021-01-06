@@ -8,8 +8,8 @@ date = "2019-07-01"
 
 I am a Ph.D student in the Integrative Genetic and Genomics (IGG) graduate group of
 the University of California, Davis. Briefly, I am interested in studying
-the mechanisms of complex gene expression regulation 
-using from both a computational and experimental perspectives. 
+the mechanisms of complex gene expression regulation and all the methods 
+/ struggle therein required for making interesting biological insights. 
 I am currently taking part in lab rotations and coursework.
 
 Before starting with IGG, I did work in Soybean genomics, X-ray crystallography,
@@ -38,11 +38,13 @@ Below is a summary of what you can find at each main section of the site.
 Long-from non-technical descriptions of past and present research mixed in with
 similar accounts of more personal projects. Read these to get an idea of what
 I have been working on in both academic and personal capacities. Currently the most
-work in progress part of the site.
+work in progress part of the site. One posted with more coming soon.
 
 ## Posts
 
-Short blog-like entries on various topics I am interested in.
+Short blog-like entries on various topics I am interested in ranging from
+[visualizing esoterically encoded Vietnam War data]({{< ref "vietnam_data.md" >}})
+to my friends and I's [running poker night results]({{< ref "running_winnings.md" >}}).
 
 # Note
 
