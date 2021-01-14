@@ -97,13 +97,17 @@ using `plotly`. This produces a "cloud" of ligand conformations and is
 a more easily accessible sanity check to make sure Rosetta was docking in
 generally reasonable locations based on the input parameters.
 
-<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/myPlot.html"></iframe>
-
 The atoms are labeled with their identity (either protein or ligand) and their
 coordinates. They are colored by the Rosetta `total_score` parameter for the
 complex. Therefore if the complex scored -120, all atoms of the ligand in that
 complex will have the color corresponding to the -120 value. 
 
 You can pan, zoom, and rotate the plot using the controls in the upper right.
-Something that I am still working on is coloring the protein points separately
-from ligand points so they do not need to be on the color scale. 
+The top 100 ligand conformations by total score are shown below.
+
+<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/200_alignments_NPEYp_docking_total_score.html"></iframe>
+
+And the top 100 ligand conformations by interface delta X (difference in
+stability between bound and unbound states) are below this text.
+
+<iframe width="100%" height="600" frameBorder="0" name="iframe" scrolling="no" src="/plotly/200_alignments_NPEYp_docking_interface_delta_x.html"></iframe>
