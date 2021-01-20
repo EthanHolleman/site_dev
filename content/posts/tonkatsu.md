@@ -1,7 +1,7 @@
 ---
 title: "Tonkotsu Recipe"
 date: 2021-01-14
-tags: ['cooking']
+tags: ['cooking', 'blogs']
 draft: false
 ---
 
@@ -57,60 +57,23 @@ Below are all materials you will need to prepare the soup.
 
 ## Prepare electronics
 
-https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
-```
-sudo nano /boot/config.txt
-dtoverlay=w1-gpio
-sudo reboot
-sudo modprobe w1-gpio
-sudo modprobe w1-therm
-cd /sys/bus/w1/devices
-ls  # assuming connected
-cat w1_slave  # raw temp reading
-```
+So I was planning on monitoring the soup using the DS18B20 temperature sensor
+but it did not arrive in time so unfortunately I don't have data from that. 
+I also thought it might be cool to monitor if the water level drops below a
+certain level by taking advantage of the conductivity of the soup by placing
+two separated wires into the soup at the minimum desired level. If a current
+can be measured between them (broth is acting as the switch) you don't need
+to replace the water. I had a difficult time positioning the wires consistently
+given the boiling liquid and required occasional mixing. 
 
-reading the temperature
+I believe this is is very possible but will require some more specific hardware
+and / or modification to the pot itself. Anyway, if full control over your
+soup is what you desire you can download [the code I wrote in anticipation of
+doing this at this link](https://github.com/EthanHolleman/soup_monitor). 
 
-```
-import os
-import glob
-import time
- 
-os.system('modprobe w1-gpio')
-os.system('modprobe w1-therm')
- 
-base_dir = '/sys/bus/w1/devices/'
-device_folder = glob.glob(base_dir + '28*')[0]
-device_file = device_folder + '/w1_slave'
- 
-def read_temp_raw():
-    f = open(device_file, 'r')
-    lines = f.readlines()
-    f.close()
-    return lines
- 
-def read_temp():
-    lines = read_temp_raw()
-    while lines[0].strip()[-3:] != 'YES':
-        time.sleep(0.2)
-        lines = read_temp_raw()
-    equals_pos = lines[1].find('t=')
-    if equals_pos != -1:
-        temp_string = lines[1][equals_pos+2:]
-        temp_c = float(temp_string) / 1000.0
-        temp_f = temp_c * 9.0 / 5.0 + 32.0
-        return temp_c, temp_f
-	
-while True:
-	print(read_temp())	
-	time.sleep(1)
-```
+Once everything is set up, it should text / email you if soup temperature or
+broth level gets too low.
 
-## Add electronics
-
-Since it is critical the low boil is maintained it is widely accepted that
-you should electronically monitor the temperature and water level of your
-broth.
 
 ## Prepare broth
 
@@ -173,7 +136,19 @@ Done!
 
 # Enjoy
 
-# Plot temperature data with R
+Here are a few pictures of my results.
+
+![](/posts/images/IMG_4156.HEIC.png)
+
+*Chashu just out of the oven*
+
+![](/posts/images/IMG_4157.HEIC.png)
+
+*Closeup glam shot of that molten egg and soup*
+
+![](/posts/images/IMG_4159.HEIC.png)
+
+*Abusing portrait mode*
 
 
 
