@@ -73,12 +73,21 @@ and negative rates.
 ## Conclusions
 
 The results of this new blood based test are extremely impressive, and
-hopefully the test becomes even more accurate in the future. But what this
-math points out is that, medical testing is inheritably difficult, and interpreting
-common metrics of the accuracy of medical tests is not incredibly intuitive.
-Further, the rate of occurrence of the condition a test assays should always be
-considered when accessing a particular medical test.
+hopefully the test becomes even more accurate in the future. Since this article
+focused on the new methodology the PanSeer test used and their impressive
+preliminary results I think it was appropriate to focus on measures such
+as sensitivity and specificity. The purpose of this except was to highlight
+how the prevalence of a disease has a huge impact on how we interpret the
+results out in the wild. It is also important to note that PPV can be made
+arbitrary low by decreasing the prevalence of a disease and that there is a
+sort of paradox where even an extremely accurate (in terms of sensitivity and
+specificity) test can have low PPV if the prevalence of the disease is also
+very low.
 
+I think the broader take away is that medical testing is inheritably,
+mathematically difficult endeavour and disease prevalence should be
+considered by patients and doctors when reviewing the results of any medical
+test. 
 
 
 
