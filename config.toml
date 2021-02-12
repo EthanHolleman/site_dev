@@ -33,6 +33,7 @@ googleAnalytics = "G-84NGXGRHE8" # Set your Google Analytics UA here
   author = "Ethan Holleman" # You can also set author in post front matter individually
   # subTitle = "Ethan Holleman's personal website."
   summaryLength = 100
+  math = true
 
   # Source URL of the websmy_blogite, will appear in the footer
   sourceURL = "https://github.com/EthanHolleman/ethanholleman.github.io"
