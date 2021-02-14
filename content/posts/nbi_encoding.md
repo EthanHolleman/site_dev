@@ -84,8 +84,8 @@ This is in all likelihood not a big deal, but I am a nerd and spent an hour or
 two looking into it. This is likely just a case of a lack of documentation
 of small change in encoding practices. However, this data is used by researchers 
 and regulators to understand the state of America's infrastructure and therefore
-it is important it representation should be as accurate and true to reality as
-possible so I think it iw worth thinking about.
+its representation should be as accurate and true to reality as
+possible. So at the very least I think it iw worth thinking about.
 
 ## Update
 
