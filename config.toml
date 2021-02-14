@@ -31,6 +31,7 @@ googleAnalytics = "G-84NGXGRHE8" # Set your Google Analytics UA here
 
 [params]
   author = "Ethan Holleman" # You can also set author in post front matter individually
+  colorScheme = "light"
   # subTitle = "Ethan Holleman's personal website."
   summaryLength = 100
   math = true

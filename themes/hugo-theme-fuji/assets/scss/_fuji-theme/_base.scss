@@ -25,8 +25,8 @@
 body[data-theme='auto'] {
   @include light();
 
-  @media (prefers-color-scheme: dark) {
-    @include dark();
+  @media (prefers-color-scheme: light) {
+    @include light();
     @import '_dark-diff'; // things different from light
   }
 }
