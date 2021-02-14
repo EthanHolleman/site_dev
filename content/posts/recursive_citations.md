@@ -2,7 +2,7 @@
 title: "What would recursive academic citations look like?"
 date: 2021-02-13
 tags: ['R', 'blogs', 'Python']
-draft: true
+draft: false
 ---
 
 The way academic citations are measured currently is pretty standardized. 
