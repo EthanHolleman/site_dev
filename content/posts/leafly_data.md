@@ -1,5 +1,5 @@
 ---
-title: "Scraping and visualizing leafly.com cannabis strain data"
+title: "Scraping leafly.com cannabis strain data"
 date: 2021-02-16
 tags: ['programming', 'blogs', 'Python', 'R']
 draft: false
