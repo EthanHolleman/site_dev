@@ -2,7 +2,7 @@
 title: "2020 Christmas Card Bonus Pictures"
 date: 2020-12-20
 tags: ['blogs', 'christmas card']
-draft: false
+draft: true
 ---
 
 ## Apartment Tour

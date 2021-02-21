@@ -1,7 +1,7 @@
 ---
 title: "Letter to D113 school board"
 date: 2020-07-24
-tags: ['blogs']
+tags: ['blogs', 'writing']
 draft: false
 ---
 
