@@ -1,5 +1,5 @@
 ---
-title: "Bug in California legislative information bill search's text highlighting"
+title: "Bug in California legislative information bill search text highlighting"
 date: 2021-02-24
 tags: ['blogs', 'programming', 'bugs']
 draft: false
