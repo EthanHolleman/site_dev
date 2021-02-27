@@ -47,6 +47,22 @@ collectively called "effect measurements".
 These were both expressed as floats but I am not sure what the units could be
 for either if there are any.
 
+First I did some visualization in R to see if there were any differences
+between the phenotypes that immediately popped out. Below are two heatmaps
+comparing effect measurements and terpenes (right to left respectively).
+The color of the bar on the y-axis corresponds to the strains phenotype.
+
+![](/posts/images/heatmaps.jpeg)
+
+While there was not obvious clustering when using terpene measurements, there
+was slightly more promising results going off the effect measurements; this
+was actually opposite what I was expecting. 
+
+I also plotted the same attributes shown in the heatmaps as violin plots,
+separated by each phenotype which are shown below.
+
+![](/posts/images/leafly_phenotype_violin_plots.png)
+
 I wanted to see if I could use classify the phenotype of each strain (sativa, 
 indicia or hybrid) based on the various terpene and / or effect measurements
 in a way that was at least better than a random guess.
@@ -56,39 +72,47 @@ R since there are three possible classifications. The variable importance
 plots generated from the `varImpPlot` function after training the models on their
 respective training sets is below.
 
-![](/posts/images/effect_terp.png)
+![](/posts/images/terpene_RF_variable_importance.png)
 
-I then tested each model's predictive ability by using the models to predict on
-the validation set and creating a confusion matrix for each model.
+![](/posts/images/effect_measure_variable_importance.png)
 
-Observed (validation data) are the rows and predictions are columns.
+Which indicated sleepy as the most predictive measure of effect variable
+and caryophyllene or myrecene as the most predictive terpenes.
+
+I then ran each model on their validation sets and 
+created a confusion matrices.
 
 **Terpene confusion matrix**
 
-|        | Hybrid | Indica | Sativa |
-|--------|--------|--------|--------|
-| Hybrid | 696    | 32     | 3      |
-| Indica | 218    | 11     | 0      |
-| Sativa | 142    | 0      | 3      |
+```
+         predicted
+observed Hybrid Indica Sativa
+  Hybrid    685     25     10
+  Indica    243      8      0
+  Sativa    123      7      3
+```
 
 Using terpenes as the explanatory variables was worse then guessing and basically
-just thought everything was a hybrid.
+the model just thought everything was a hybrid. This could have been
+because most of the strains were hybrids. 
 
 **Effect measurement confusion matrix**
 
-|        | Hybrid | Indica | Sativa |
-|--------|--------|--------|--------|
-| Hybrid | 826    | 84     | 40     |
-| Indica | 172    | 210    | 1      |
-| Sativa | 161    | 1      | 92     |
+```
+         predicted
+observed Hybrid Indica Sativa
+  Hybrid    845     56     43
+  Indica    180    213      1
+  Sativa    157      1     91
+```
 
-Neither model did great, and there seems to be a preference for hybrids. This
-may be because hybrids were the most prevalent phenotype in the leafly database.
+Not great either, but better. This could suggest that user ratings are 
+slightly more predictive of strain phenotype then leafly terpene measurements. 
+Although, there is a lot of optimization that could still be done here.
 Either way, fun little exercise that traversed web-scrapping, Python and R. 
 
 If you would like to play around with the processed data (csv) you can download
 it [at this link](https://github.com/EthanHolleman/leafly_scraper/blob/main/strains.tar.xz).
-
 
 
 
