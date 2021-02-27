@@ -121,10 +121,10 @@ googleAnalytics = "G-84NGXGRHE8" # Set your Google Analytics UA here
     name = "Posts"
     url = "/posts/"
     weight = 3
-  [[menu.nav]]
-    name = "Download CV"
-    url = "/cv/Holleman_CV.pdf"
-    weight = 4
+  # [[menu.nav]]
+  #  name = "Download CV"
+  #  url = "/cv/Holleman_CV.pdf"
+  #  weight = 4
   [[menu.nav]]
     name = "Search"
     url = "/search/"

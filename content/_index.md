@@ -14,10 +14,7 @@ I am currently taking part in lab rotations and coursework.
 
 Before starting with IGG, I did work in Soybean genomics, X-ray crystallography,
 and high-throughput macromolecule crystallization, the last of which I am still actively
-involved in. For the full details of my current and previous projects head over
-to the [Projects page]({{< ref "Projects" >}}). If you are short on time 
-and / or would prefer brevity you can download a copy of my 
-[current CV](/cv/holleman_cv.pdf).
+involved in.
 
 Outside of research I enjoy learning about and building gadgets with micro-controllers
 and [Raspberry Pi computers](https://github.com/EthanHolleman/fridge_master_2000), 
