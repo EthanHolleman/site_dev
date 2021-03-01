@@ -12,9 +12,7 @@ note it.
 
 If you are interested in California legislation you can go to
 the [state website](https://leginfo.legislature.ca.gov/faces/home.xhtml)
-and search for bills by a number of parameters, including by keywords as an example ce can search for "housing".
-
-<img src="https://www.rd.com/wp-content/uploads/2019/09/Cute-cat-lying-on-his-back-on-the-carpet.-Breed-British-mackerel-with-yellow-eyes-and-a-bushy-mustache.-Close-up-e1573490045672.jpg" alt="Cat">
+and search for bills by a number of parameters, including by keywords. 
 
 ![](/posts/images/legi_search.png)
 
