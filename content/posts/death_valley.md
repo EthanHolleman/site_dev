@@ -41,9 +41,40 @@ The Last Supper (1984) by Charles Albert Szukalski also at Goldwell.
 ![](/posts/images/IMG_4343.png)
 
 
+Just outside Artist's Palette overlooking the valley.
+
+![](/posts/images/IMG_4386.png)
+
+Artist's Palette.
+
+![](/posts/images/IMG_4388.png)
+
+Erica in the Artist's palette canyons.
+
+![](/posts/images/IMG_4399.png)
+
+View from Zabriskie Point.
+
+![](/posts/images/IMG_4419.png)
+
+Salt Creek, home of one of ~ 10 species of California Pupfish, a really classic
+and interesting example of allopatric speciation. The 10 species diverged from
+a single ancestor when the drying of ancient lake Manley separated the populations
+into isolated pockets.
+
+![](/posts/images/IMG_4436.png)
+
+Pupfish closeup.
+
+![](/posts/images/IMG_4440.png)
+
 Erica walking across the [Mesquite flats](https://www.nps.gov/deva/learn/nature/sand-dunes.htm) sand dunes.
 ![](/posts/images/IMG_4427.png)
 
 Picnic in the Mesquite dunes around dusk.
 
 ![](/posts/images/IMG_4456.png)
+
+Sunset at  Mesquite dunes.
+
+![](/posts/images/IMG_4452.png)
