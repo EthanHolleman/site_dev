@@ -2,7 +2,7 @@
 title: "Fishing at Putah Creek"
 date: 2020-11-28
 tags: ['fishing', 'blogs']
-draft: true
+draft: false
 ---
 
 Day trip out to Putah Creek in Winters CA.
