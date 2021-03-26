@@ -1,7 +1,7 @@
 ---
 title: "Day trip to Yosemite"
 date: 2020-12-29
-tags: ['day trips', 'blogs']
+tags: ['day trips', 'national parks', 'blogs']
 draft: false
 ---
 
