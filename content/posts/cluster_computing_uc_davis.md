@@ -42,6 +42,14 @@ to approve your access.
 Create your ssh private-public key pair that you will use to login, follow
 [this guide](https://wiki.cse.ucdavis.edu/support/general/security/ssh). 
 
+```
+If you already have an ssh key for one cluster due to a rotation
+or other reason and are now trying to get access to a different cluster you
+may not need to regenerate your key. The cluster administrators will likely
+reuse your existing key. Unless you are told otherwise I think it is safe
+to assume this.
+```
+
 Register your public key using the [account request form](https://wiki.cse.ucdavis.edu/cgi-bin/index2.pl). This will send your request into the ether and not provide
 you with any feedback. 
 
@@ -52,6 +60,7 @@ hpc-help@ucdavis.edu with some additional info about what you are trying to do
 and cc your PI. This seems to get a human working on your approval faster as
 the HPC support team, at least in my experience, has been very helpful and fast
 when contacted directly.
+
 
 #### Genome center registration
 
