@@ -92,24 +92,20 @@ sudo make install
 ```
 
 but since we do not have sudo privileges to run the program we can add the
-exe path to a variable in `~/.profile` to use GROMACS from anywhere. From the
+exe to out PATH variable. From the
 build directory the GROMACS exe path will be `[Your absolute path to build dir]/bin/gmx`.
 For me this looks like `home/ethollem/software/gromacs-2021-rc1/build/bin/gmx`.
 
-Open / create `~/.profile` using your preferred text editor and add the line
+Open / create `~/.bashrc` using your preferred text editor and add the line
 
 ```bash
-export gmx="/home/ethollem/software/gromacs-2021-rc1/build/bin/gmx"
+export PATH="$HOME/software/gromacs-2021-rc1/build/bin/gmx:$PATH"
 ```
 
 Then log off and log back in again. Test everything is working correctly by running
 ```bash
-$gmx --help
+gmx --help
 ```
 
 You should be greeted wih the GROMACS help page. If you are you are now good
 to go.
-
-This is not ideal as you will have to run `GROMACS` using `$gmx` instead of
-`gmx` but since we cannot create symbolic links to files in `/usr/local/bin`
-it is the solution I am working with for now.

@@ -26,7 +26,7 @@ results you will need to involve your PI, and possibly other administrators.
 
 Figure out where your lab does their compute. You can see a full list of
 cluster's at the 
-[UC Davis High Preformance Computing site](https://www.hpc.ucdavis.edu/clusters).
+[UC Davis High Performance Computing site](https://www.hpc.ucdavis.edu/clusters).
 
 For life science labs this is likely either the FARM, the Genome Center cluster
 (also shown as LSSC0), or Crick. While I have so far only used LSSC0, Crick and FARM LSSC0 seems to be the most distinct and uses their own registration system.
