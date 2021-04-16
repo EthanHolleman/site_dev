@@ -26,7 +26,8 @@ I was curious how changing the starting probability of a cell starting the
 simulation as living would effect the game as it progressed. So I ran
 250 generation simulations with start-as-living-cell probabilities of
 0.1, 0.3, 0.5 and 0.8. Each start-as-living-cell probability plot is composed
-of 100 simulations.
+of 100 simulations. The generation number is shown on the x-axis and the
+proportion of living cells is shown on the y. 
 
 ![](/posts/images/conway_sim.png)
 
