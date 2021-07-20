@@ -2,7 +2,7 @@
 title: "PanSeer cancer blood test: Thinking about interpreting medical test accuracy"
 date: 2021-02-11
 tags: ['medical testing', 'blogs', 'cancer']
-draft: false
+draft: true
 ---
 
 ## Background
