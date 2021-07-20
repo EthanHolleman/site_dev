@@ -2,7 +2,7 @@
 title: "2021 candidacy for IGG GSA representative"
 date: 2021-07-19
 tags: ["blogs", "IGG"]
-draft: true
+draft: false
 ---
 
 Over the past academic year I have worked as a member of the Legislative Affairs 

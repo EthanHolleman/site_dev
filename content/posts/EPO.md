@@ -2,7 +2,7 @@
 title: "2021 candidacy for IGG education policy officer"
 date: 2021-07-19
 tags: ["blogs", "IGG"]
-draft: true
+draft: false
 ---
 
 I have been interested in education since my undergraduate career. While working 
