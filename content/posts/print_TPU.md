@@ -2,7 +2,7 @@
 title: "Print TPU without a direct drive extruder"
 date: 2022-03-08
 tags: ['3D Printing', 'blogs']
-draft: false
+draft: true
 ---
 
 ## I hate blogs and detailed explanations; just tell me how to do it!
