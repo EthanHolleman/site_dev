@@ -5,6 +5,37 @@ tags: ["blogs", "Davis guides", "Linux"]
 draft: false
 ---
 
+## Update for Jammy Jellyfish users: May 2022
+
+If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found
+yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue
+with Eduroam that I do not currently pretend to understand but no one cares
+about that anyway. You want answers. Here is what worked for me which is based
+off of [this bug report](https://bugs.launchpad.net/ubuntu/+source/openssl/+bug/1963834).
+
+1. Open `/usr/lib/ssl/openssl.cnf` in your favorite text editor.
+2. Add the following lines to the beginning of the file.
+   
+```
+openssl_conf = openssl_init
+
+[openssl_init]
+ssl_conf = ssl_sect
+
+[ssl_sect]
+system_default = system_default_sect
+
+[system_default_sect]
+Options = UnsafeLegacyRennegotiation
+```
+
+3. Save and reboot. Attempt re-connecting with the according to [this guide](https://kb.northwestern.edu/page.php?id=109238)
+   but use your Davis CAS credentials.
+
+Good luck.
+
+
+## Pre-2022: Leaving up for archival purposes
  
 I use Ubuntu 20.04 as my daily driver operating system at work and
 at home. Until recently, when I was on campus I had a really hard time consistently
