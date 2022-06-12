@@ -55,7 +55,7 @@ really be termed "Nerf technology".
 **My modified Ender 3V2 printer**
 {{< figure src="/posts/images/nerf/myPrinter.jpg"  caption="The 3D printer I use for all my Nerf related prints. I have added parts (some printed on this machine) in an attempt to increase performance and reliability. The Ender3 is a common workhorse machine due to its low cost at the price of requiring occasional tinkering in order to keep running consistently.">}}
 
-These conditions have allowed talented designers and engineers to experiment with
+These conditions have allowed talented designers and engineers to experiment with,
 and rapidly prototype new, entirely 3D printed high performance blasters. Unlike many hobbies 
 where innovation is driven in a top down manor, with companies
 producing and marketing new and more performant designs, mechanisms and tools, the
