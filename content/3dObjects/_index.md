@@ -38,6 +38,16 @@ This was one of the first objects I modeled. It uses a wooden dowel to hold
 spools of filament. Keeps them out of the way in small workspaces and easily
 accessible at the same time. Still using it to this day.
 
+
+### TRUSS: A device for cleaning Dyson style bagless vacuum cleaners 
+
+[Link: hosted on Printables.com](https://www.printables.com/model/259147-truss-a-device-for-cleaning-dyson-style-bagless-va)
+
+The GF hates cleaning out the inside of the bagless vacuum cleaner, specially touching all the dust, grime and cat hair that accumulates in large clumps that need to be pulled out. So I designed and printed this hook device which she can use to clean out the vacuum without needing to make contact with any dirt / hair.
+
+I also think it looks pretty cool.
+
+
 ## Nerf / Dart tag related objects
 
 ### Gryphon Side Battery Tray (WIIIIIDE)
@@ -47,4 +57,17 @@ accessible at the same time. Still using it to this day.
 Enlarged the existing side battery tray for the Gyrphon flywheel powered foam dart blaster
 to fit large Lipo batteries.
 
+
+### SABRE: Trigger guard for lepus-like blasters
+
+[Link: hosted on Printables.com](https://www.printables.com/model/262590-sabre-trigger-guard-for-lepus-like-blasters)
+
+Trigger guard for lepus-like foam blasters. No modifications to original blaster files required; it just clamps on! Only requires 1 M3 bolt to tighten the clamping mechanism and prevents you from accidentally actuating the exposed micro-switches. 
+
+
+### Seara Robusta: Improved pump skewer sear 
+
+[Link: hosted on Printables.com](https://www.printables.com/model/281072-seara-robusta-improved-pump-skewer-sear)
+
+This is an improved sear for SillyButt's pump action skewer blaster. In my hands it helps prevent catch issues. 
 
