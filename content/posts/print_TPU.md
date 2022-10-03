@@ -2,10 +2,9 @@
 title: "Print TPU without a direct drive extruder"
 date: 2022-03-08
 tags: ['3D Printing', 'blogs']
-draft: true
+draft: false
 ---
 
-## I hate blogs and detailed explanations; just tell me how to do it!
 
 These recommendations are in addition to general 3D printing best practices, namely
 proper bed leveling and cleaning. Without a clean and level bed, none of this
@@ -51,4 +50,9 @@ begins, this can cause a spiral of extruded filament buildup on the nozzle
 instead of the print bed. Clean the nozzle before starting or if its too far
 gone just save yourself some time and replace it with a cheap brass 0.4 mm.
 
-## I love detailed explanations; tell me more!
+
+### 4. Print models one at a time
+
+I have found that when you disable retractions you can get a lot of stringing between
+objects. This is greatly reduced when you keep your prints to one main
+object or print objects serially instead of all-at-once.
