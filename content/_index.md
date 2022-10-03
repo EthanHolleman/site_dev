@@ -43,6 +43,12 @@ I have been working on in both academic and personal capacities. Currently the m
 work in progress part of the site. Has kind of been neglected compared to the
 posts section. One up with more coming hopefully soon.
 
+## What is the site banner image?
+
+Glad you asked! It is explained in [this post]({{< ref "siteBanner.md" >}}).
+
+
+
 
 
 
