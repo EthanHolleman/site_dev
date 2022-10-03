@@ -9,10 +9,10 @@ The site banner image is actually a specific type of infill pattern used in 3D p
 called "gyroid infill".
 
 Generally, to save time and plastic, parts that are 3D printed are not printed
-as 100% solid blocks of plastic. Instead the user will set a infill percentage
+as 100% solid blocks. Instead the user will set a infill percentage
 that defines how much of the interior space is filled. Once that is decided you
 still need to determine exactly how you are going to fill that space so it
-can be translated into command the printer can understand.
+can be translated into commands the printer can understand.
 
 Enter infill patterns.
 
