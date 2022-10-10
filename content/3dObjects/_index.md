@@ -71,3 +71,16 @@ Trigger guard for lepus-like foam blasters. No modifications to original blaster
 
 This is an improved sear for SillyButt's pump action skewer blaster. In my hands it helps prevent catch issues. 
 
+
+### MEGA VERTEBRE: Rail mounted MegaXL dart holder
+
+[Link: hosted on Printables.com](https://www.printables.com/model/292339-mega-vertebre-rail-mounted-megaxl-dart-holder)
+
+This is a pic rail Nerf MegaXL dart holder. I personally use this with SillyButts SCAR barrel to quickly fire off MegaXL. Model should not require supports for printing. Three holders (for a total of 6 darts) can fit on one rail. The holders can be attached with adhesive and / or small screws to the rail broadside.
+
+
+### Nexus Pro FPS reducing tuning cap
+
+[Link: hosted on Printables.com](https://www.printables.com/model/292345-nexus-pro-fps-reducing-tuning-cap)
+
+Open source FPS reducing tuning cap for the nexus pro blaster. 
