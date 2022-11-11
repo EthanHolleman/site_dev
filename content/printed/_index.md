@@ -3,6 +3,35 @@ title = "3D objects"
 description = "Landing page for posts"
 +++
 
+<style>
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+} 
+
+.columnPic img {
+  margin-top: 8px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+</style>
+
 # ETH3D
 
 
@@ -15,8 +44,8 @@ description = "Landing page for posts"
     to the Davis / Sacramento area and are interested in high quality 3D printing
     feel free to reach out to me via email at printed@ethanholleman.com.
     </div>
-    <div class="column">
-     <img src="static/imgs/eth3d.png" width=60%>
+    <div class="columnPic">
+     <img src="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/content/printed/images/eth3d.png">
     </div>
   </div>
 
@@ -52,26 +81,6 @@ I'll get back to you with an estimate most likely within 24 hours.
 
 ## Available filaments
 
-<style>
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-} 
-
-</style>
 
 Below are filaments I currently have on hand. I do most of my printed with
 FusionFilaments HTPLA which is a high strength, high temperature resistance
