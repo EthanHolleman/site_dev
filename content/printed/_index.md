@@ -35,49 +35,10 @@ description = "Landing page for posts"
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 3825e51074a4698f5429afdf63f857b5692f7e79
 
 </style>
 
-
-<<<<<<< HEAD
-<div style="width: 100%; display: table;">
-    <div style="display: table-row">
-        <div style="width: 50%; display: table-cell;">
-          Thanks for your interest in commissioning a 3D printed object. Here you
-          will find information stuff related to printing, currently available filaments
-          and some answers to frequently asked questions
-          Found this page without talking to me in person? Impressive. If you are local
-          to the Davis / Sacramento area and are interested in high quality 3D printing
-          feel free to reach out to me via email at printed@ethanholleman.com.
-        </div>
-        <div style="width: 50%; display: table-cell; text-align: center; justify-content: center; vertical-align: middle;"> 
-          <img src="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/content/printed/images/eth3d.png" width="60%">
-        </div>
-    </div>
-</div>
-=======
-
-{{< figure src="https://raw.githubusercontent.com/EthanHolleman/site_dev/main/content/printed/images/eth3d.png" width="70%" >}}
->>>>>>> 3825e51074a4698f5429afdf63f857b5692f7e79
-
-
-<<<<<<< HEAD
-I am excited by making functional objects that do real things for people.
-Especially things that would have likely not been feasible without access to
-3D printing resources. If a print fails due to an quality control issue on my end 
-I'll be happy to re-print at no cost.
-
-
-## Estimates
-
-Since each printed object is unique I cannot provide an estimated cost to print
-your object without first looking at your model's files. Once you have your files
-in hand (these can be `.stl`, `.3mf`, `.obj` or `.step` files) please email your files to **printed@ethanholleman.com**, or message me via discord **Hollebread#4185** 
-=======
+# ETH3D
 
 Thanks for your interest in commissioning a 3D printed object. Here you
 will find information stuff related to printing, currently available filaments
@@ -93,18 +54,14 @@ Since each printed object is unique I cannot provide an estimated cost to print
 your object without first looking at your model's files. Once you have your files
 in hand (these can be `.stl`, `.3mf`, `.obj` or `.step` files) please email your files 
 to **printed@ethanholleman.com**, or 
->>>>>>> 3825e51074a4698f5429afdf63f857b5692f7e79
 along with your choice of color for each part and any specific requests. 
 I'll get back to you with an estimate most likely within 24 hours.
 
 ## General print settings
-<<<<<<< HEAD
-=======
 
 TLDR: 3D printed parts will never be as strong as injection molded plastic, 
 if your part required extreme durability let me know so I can adjust print
 settings to increase strength at the cost of using more filament. 
->>>>>>> 3825e51074a4698f5429afdf63f857b5692f7e79
 
 For functional parts my default settings are 25% gyroid pattern infill with
 5 walls. I find that this produces parts strong enough to endure use as
@@ -115,10 +72,6 @@ If you would like an even more detailed picture of the setting that will be used
 to print your part I am happy to export my slicer profiles and send them to
 you upon request.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3825e51074a4698f5429afdf63f857b5692f7e79
 ## Available filaments
 
 Below are filaments I currently have on hand. I do most of my printed with
@@ -163,16 +116,6 @@ but will likely ask you pay a marginally increased printing cost.
       <img src="https://cdn.shopify.com/s/files/1/0002/8468/8445/products/HTPLA_Refill_HeavyWaterBlue-01_ab24215b-963d-456e-8f5e-e6de4d7ad29f_720x.png?v=1661798717" width="60%">
     </div>
 
-<div class="row">
-    <div class="column">
-      <img src="https://cdn.shopify.com/s/files/1/0002/8468/8445/products/HTPLA_Refill_IonizedCobaltBlack-01_1024x1024@2x.png?v=1660058936" width=60%>
-    </div>
-   <div class="column">
-      <img src="https://cdn.shopify.com/s/files/1/0207/3624/5824/products/VFEWTE17511_Transparent_PETG_1kg_1pack_1_Main.jpg?v=1653896882&width=1100" width="60%">
-      <p> Overture white PETG </p>
-    </div>
-  </div>
-</div>
 
 <br>
 <br>
@@ -240,16 +183,6 @@ Nerf blasters).
       printed for them.</p>
     </div>
 
-<div class="row">
-    <div class="column">
-      <img src="https://cdn.shopify.com/s/files/1/0002/8468/8445/products/HTPLA_Refill_IonizedCobaltBlack-01_1024x1024@2x.png?v=1660058936" width=60%>
-    </div>
-   <div class="column">
-      <img src="https://cdn.shopify.com/s/files/1/0207/3624/5824/products/VFEWTE17511_Transparent_PETG_1kg_1pack_1_Main.jpg?v=1653896882&width=1100" width="60%">
-      <p> Overture white PETG </p>
-    </div>
-  </div>
-</div>
 
 <br>
 <br>
