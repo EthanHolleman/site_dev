@@ -1,8 +1,8 @@
 <style>
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('img/path1148.png');
-    height: 25%;
+      url('https://raw.githubusercontent.com/EthanHolleman/site_dev/main/themes/hugo-theme-fuji/static/img/path1148.png');
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,11 +18,16 @@
     color: white;
   }
 
+  header {
+    min-height:160px;
+}
+
 
 </style>
-
+<header>
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:50px">{{ .Site.Title }}</h1>
+    <h1 style="font-size:70px">{{ .Site.Title }}</h1>
   </div>
 </div>
+</header>
