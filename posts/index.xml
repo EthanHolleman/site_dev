@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Ethan Holleman</title>
+    <link>https://ethanholleman.com/posts/</link>
+    <description>Recent content in Posts on Ethan Holleman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ethanholleman.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Raspberry Pi Pico W LED 3D print status monitor</title>
+      <link>https://ethanholleman.com/posts/pico-print-status-indicator/</link>
+      <pubDate>Sun, 27 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/pico-print-status-indicator/</guid>
+      <description>I am almost constantly running my 3D printer. Usually the only time it is not pumping plastic is when the laundry machine is running. Both the printer and laundry machine are plugged into the same outlet and for some reason having them both running at the same time can occasionally cause the printer to freeze and stop.
+If the girlfriend wants to start a load of laundry a common question she has for me is &amp;ldquo;How long is left on this print?&amp;rdquo; since she is nice enough to not want to risk my print failing.
+So I wanted to create a quick and easy to read indicator for how far along my printer is through a print and came up with the solution described below.</description>
+    </item>
+    
+    <item>
+      <title>Laser cut street map coasters using Glowforge</title>
+      <link>https://ethanholleman.com/posts/streetmap-coasters/</link>
+      <pubDate>Sat, 15 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/streetmap-coasters/</guid>
+      <description>This is a project I put together for the parents before I headed home for the weekend using the Glowforge laser cutter at the maker space at the UC Davis craft center.
+The project consisted of generating street maps of a few personally notable places using SnazzyMaps. I converted these maps to bitmaps using Inkscape which I also used for the rest of the coaster design. Coasters were cut out of medium thickness clear acrylic sheets.
+To make the box, I used MakerCase to generate the SVG plans based on the size of the coasters. I cut the box sections from medium thickness draft board and assembled with tacky glue.</description>
+    </item>
+    
+    <item>
+      <title>BAUS 40 Sunnyvale: Gameplay footage</title>
+      <link>https://ethanholleman.com/posts/baus-40/</link>
+      <pubDate>Sun, 09 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/baus-40/</guid>
+      <description>A little while ago I was at Bay Area Ultra Stock&amp;rsquo;s 40th meetup and managed to record a few of the games. Played at Braly Elementary school in Sunnyvale California.
+For these games I was playing with my Pump Skewer by SillyButts designs. All parts were printed on my modified Ender3V2.</description>
+    </item>
+    
+    <item>
+      <title>What is the site banner image of?</title>
+      <link>https://ethanholleman.com/posts/sitebanner/</link>
+      <pubDate>Sun, 02 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/sitebanner/</guid>
+      <description>The site banner image is actually a specific type of infill pattern used in 3D printing called &amp;ldquo;gyroid infill&amp;rdquo;.
+Generally, to save time and plastic, parts that are 3D printed are not printed as 100% solid blocks. Instead the user will set a infill percentage that defines how much of the interior space is filled. Once that is decided you still need to determine exactly how you are going to fill that space so it can be translated into commands the printer can understand.
+Enter infill patterns.
+Image courtsey of Cura
+These are strategies used to fill in the internal space of a printed object.</description>
+    </item>
+    
+    <item>
+      <title>Rejoice, the golden age of Nerf is upon us! A general overview of the state of hobby grade and competitive foam dart tag</title>
+      <link>https://ethanholleman.com/posts/hobby-grade-nerf/</link>
+      <pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/hobby-grade-nerf/</guid>
+      <description>It is likely you have come into contact with the Nerf brand at some point in your life. Hasbro&amp;rsquo;s iconic line of foam flinging mechanisms, until recently, held a near complete monopoly on the hobby. While Nerf blasters remain fun for casual around-the-house or workplace battles, for many, they simply do not pack enough of a punch. There has always been a small continent of nerds who longed to maintain the goofy persona that Nerf affords with its bright colors, oversized projectiles, and exaggerated designs but push the limits of their blasters. These early &amp;ldquo;hobby grade&amp;rdquo; Nerfers modified existing blasters and even constructed completely original designs using parts you could buy from a hardware store.</description>
+    </item>
+    
+    <item>
+      <title>Print TPU without a direct drive extruder</title>
+      <link>https://ethanholleman.com/posts/print_tpu/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/print_tpu/</guid>
+      <description>These recommendations are in addition to general 3D printing best practices, namely proper bed leveling and cleaning. Without a clean and level bed, none of this advice will do you any good.
+1. Print a filament guide; preferably one that uses a bearing for your printer I print on an Ender3 and use this guide by Mark Villela. A filament guide is an abosulte requirement to reduce the angle the filament must enter the extruder gear at. Without one, the tension on the filament at the extruder will be to great for it to push filament into the hot end.</description>
+    </item>
+    
+    <item>
+      <title>How to actually connect to UC Davis campus wifi (Eduroam) on Linux</title>
+      <link>https://ethanholleman.com/posts/davis-wifi-on-linux/</link>
+      <pubDate>Thu, 19 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/davis-wifi-on-linux/</guid>
+      <description>Update for Jammy Jellyfish users: May 2022 If you recently updated to Ubuntu 22.04 LTS (Jammy Jellyfish) you may have found yourself unable to connect to Eduroam. This seems to be due to a weird ssl issue with Eduroam that I do not currently pretend to understand but no one cares about that anyway. You want answers. Here is what worked for me which is based off of this bug report.
+Open /usr/lib/ssl/openssl.cnf in your favorite text editor. Add the following lines to the beginning of the file. openssl_conf = openssl_init [openssl_init] ssl_conf = ssl_sect [ssl_sect] system_default = system_default_sect [system_default_sect] Options = UnsafeLegacyRennegotiation Save and reboot.</description>
+    </item>
+    
+    <item>
+      <title>2021 candidacy for IGG education policy officer</title>
+      <link>https://ethanholleman.com/posts/epo/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/epo/</guid>
+      <description>I have been interested in education since my undergraduate career. While working towards my undergrad degree in bioinformatics, I designed and presented a short series of lectures at a local assisted living facility focused on building proficiency with technology as a means of independence. The series covered the very basics of computer and internet usage; how to email a picture, write a letter with a word processor, and spot common signs of phishing scams. The hour sessions were, in all honesty, slow, painful, and inexplicably seemed to elicit pseudo-existential questions from the participants like &amp;ldquo;Where does a window end and another begin?</description>
+    </item>
+    
+    <item>
+      <title>2021 candidacy for IGG GSA representative</title>
+      <link>https://ethanholleman.com/posts/gsa_rep/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/gsa_rep/</guid>
+      <description>Over the past academic year, I have worked as a member of the Legislative Affairs Committee (LAC); a GSA committee that works to track federal and state policy that may impact UC students as it is proposed and progresses through the legislature. The reviews that the committee performs eventually help inform the positions of the UC Graduate and Professional Council who&amp;rsquo;s members advocate for graduate and professional students to the UC Regents and in state and federal legislatures.
+My focus as part of the committee was to improve the efficiency of the review and tracking of State legislative items. After learning how legislative tracking is done within the committee I identified monotonous tasks like navigating the California legislative website, searching for keywords, and summarizing bills and built a program to automate these tasks, which is freely available for anyone to use.</description>
+    </item>
+    
+    <item>
+      <title>Implementing and visualizing Conway&#39;s Game of Life</title>
+      <link>https://ethanholleman.com/posts/conway_game_of_life_implementation/</link>
+      <pubDate>Fri, 16 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/conway_game_of_life_implementation/</guid>
+      <description>I took the day off today to recover from second round of the covid vaccine and spent a little while implementing my own version of Conway&amp;rsquo;s Game of Life in Python.
+Here&amp;rsquo;s an example of a simulation involving a grid of 500 x 500 cells. When initializing the first generation each cell had a 0.3 probability of starting as a living cell (start-as-living probability). Increasing this value will increase the number of cells the grid is initialized with. I ran the simulation for 100 generations.
+and with a 0.1 start-as-living probability.
+I was curious how changing the starting probability of a cell starting the simulation as living would effect the game as it progressed.</description>
+    </item>
+    
+    <item>
+      <title>Trip to Death Valley National Park</title>
+      <link>https://ethanholleman.com/posts/death_valley/</link>
+      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/death_valley/</guid>
+      <description>Quick stop at Truckee lake on the way out of California.
+Two abandoned structures just outside of Hawthorn, Nevada.
+The somewhat ill-conceived Clown Motel. Although as someone who as worked with professional clowns I am not one to malign the occupation; clowns are an extremely hard working bunch.
+Most roads past Reno heading towards Death Valley look something like this.
+Invasive Burros (donkeys) running through the scrub. Burros were unintentionally introduced to Nevada after escaping from early mining towns.
+Lady Desert The Venus, part of the Goldwell Open Air Museum by Dr.Hugo Heyrman in Rhyolite, Nevada; an abandoned mining town. Constructed before the popularization of Minecraft.</description>
+    </item>
+    
+    <item>
+      <title>Finalist at the Cornell Institute For Digital Agriculture Hackathon!</title>
+      <link>https://ethanholleman.com/posts/cida_hackathon/</link>
+      <pubDate>Tue, 09 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/cida_hackathon/</guid>
+      <description>A while ago when I was reading through my graduate group&amp;rsquo;s weekly bullitin I saw a solicitation for the Cornell Institute For Digital Agriculture (CIDA) Hackathon.
+I had not participated in a Hackathon before and it looked interesting so I applied, was selected, and kind of forgot about it until last weekend when I needed to find and join a team. I ended up finding a great group of students from the Netherlands, Brazil and Ohio worked with them on our project proposal basically my entire waking Saturday.
+Our group decided to focus on the food waste challenge category with out central idea being an app that would connect food waste medium scale food waste producers like restaurants to similar scaled consumers, such as farmers who utilize food wastes for composts or animal feed.</description>
+    </item>
+    
+    <item>
+      <title>Bug in California legislative information bill search text highlighting</title>
+      <link>https://ethanholleman.com/posts/california_legislature_search/</link>
+      <pubDate>Wed, 24 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/california_legislature_search/</guid>
+      <description>Recently I was working on automating some legislation tracking tasks for the UC Davis Legislative Affairs Committee and noticed a potential bug in displaying the results of bill information searches and wanted to note it.
+If you are interested in California legislation you can go to the state website and search for bills by a number of parameters, including by keywords.
+Which brings up a number of bills. Clicking on one gives us the bill&amp;rsquo;s full text with out keyword highlighted.
+The bug occurs when we search for specific html tags like div or span.
+When these terms are searched the source html ends up being rendered on the actual page with tags highlighted.</description>
+    </item>
+    
+    <item>
+      <title>Polo paper published in the Journal of Applied Crystallography!</title>
+      <link>https://ethanholleman.com/posts/polo_published/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/polo_published/</guid>
+      <description>Polo: an open-source graphical user interface for crystallization screening was just published in the Journal of Applied Crystallography. It is my first academic paper as well as my first first-author paper.
+Please check out the article at this link!
+Below are a few of the figures from the article, click to be taken to the full descriptions.</description>
+    </item>
+    
+    <item>
+      <title>Scraping leafly.com cannabis strain data</title>
+      <link>https://ethanholleman.com/posts/leafly_data/</link>
+      <pubDate>Tue, 16 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/leafly_data/</guid>
+      <description>Recently I was asked by a friend if they knew about any databases that classified cannabis strains by symptoms people tend to use them to relieve. I didn&amp;rsquo;t know of the existence of any but had heard about leafly.com which catalogues user reviews of various cannabis strains and compiles data on their characteristics.
+I thought this could be a good place for them to start and so I started looking into what it would take to make a webscrapper to pull down all the data leafly has complied on hundreds on cannabis strains.
+It turns out it didn&amp;rsquo;t take that much.</description>
+    </item>
+    
+    <item>
+      <title>What would recursive academic citations look like?</title>
+      <link>https://ethanholleman.com/posts/recursive_citations/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/recursive_citations/</guid>
+      <description>The way academic citations are measured currently is pretty standardized. Authors of article A accrue a citation whenever their article is directly cited in article B. But there is likely a large amount of work that was cited by article A but not by article B. The authors of this work which indirectly contributed to article B by contributing to article A (which B cites) will not see a citation.
+What if instead citing one article triggered a recursive call all the way down the network formed by articles and their citations? Would this end up eventually citing almost all articles in a field?</description>
+    </item>
+    
+    <item>
+      <title>Potential NBI encoding error</title>
+      <link>https://ethanholleman.com/posts/nbi_encoding/</link>
+      <pubDate>Tue, 09 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/nbi_encoding/</guid>
+      <description>NBI Background The National Bridge Inventory (NBI) is a program of the Federal Highway Administration which is an agency within the U.S Department of Transportation. The NBI makes available records and statistics about all the bridges in the United States which includes information about bridge location, integrity, inspection history and usage.
+Potential encoding discrepancy As a side project I have been working on creating a more exhaustive Python package for parsing NBI data. This is mainly focused on decoding the numerical representations present in data files to their semantic meanings specified in the NBI documentation.
+I ran into errors when trying to decode the state code fields, which based on the available documentation uses the coding table below.</description>
+    </item>
+    
+    <item>
+      <title>Tonkotsu Recipe</title>
+      <link>https://ethanholleman.com/posts/tonkatsu/</link>
+      <pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/tonkatsu/</guid>
+      <description>This recipe (aside from the electronics) is derived from Joshua Weissman&amp;rsquo;s video, How to Make Real Tonkotsu Ramen.
+Ingredients Below are all materials you will need to prepare the soup.
+Broth / soup Ingredient Quantity Units Pig trotters 3 lbs Green onion 1 bunch Yellow onion 1 Shallot 2 Knob ginger 2 inches Ramen noodles 1 package Chashu (Braised pork belly) Ingredient Quantity Units Pork belly 2 lbs Soy sauce 1/2 cup Mirin 3/4 cup Sake 1 cup Ginger knob 2 inches Green onion 1 bunch Glove garlic 5 cloves Tare Ingredient Quantity Units Bonito flakes 1/2 cup Kombu 3 pieces Soy sauce 3/4 cup Dried shiitake mushrooms 1/4 cup Chashu braising liquid 1/4 cup Electronics (Optional) Ingredient Quantity Raspberry Pi 1 DS18B20 Temperature Sensor Module Kit 1 Protocol Prepare electronics So I was planning on monitoring the soup using the DS18B20 temperature sensor but it did not arrive in time so unfortunately I don&amp;rsquo;t have data from that.</description>
+    </item>
+    
+    <item>
+      <title>Visualizing ligand docking results with PyMOL scripting and R</title>
+      <link>https://ethanholleman.com/posts/ligand_plotting/</link>
+      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/ligand_plotting/</guid>
+      <description>The past couple days I have been running some ligand docking simulations as part of my current rotation with the Cortopasssi lab using Rosetta. One of these docking simulations involved fitting a small portion of the insulin receptor (IR) the lab is interested in, into a known binding region of the Shc1 protein.
+Any Rosetta docking simulation will require hundreds of repetitions, which generate a significant number of pdb files which show the final conformation of the protein and ligand at the end of a given simulation.
+While reading about the best way to aggregate and do analyise on these results I spent a bit of time looking for ways to visualize everything Rosetta spits out.</description>
+    </item>
+    
+    <item>
+      <title>PotOddsQuiz.com: A 1 day intro to Javascript and CSS</title>
+      <link>https://ethanholleman.com/posts/potodds/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/potodds/</guid>
+      <description>I spent most of the day today learning about Javascript and CSS by building a (very ameutur) website that you can use to test your Poker pot odds calculation skills.
+Determining pot odds is useful as when compared to the probability of winning a hand the call&amp;rsquo;s expected value can be approximated.
+You can visit the website at potoddsquiz.com view the the code at the GitHub page or use the website embedded directly below.
+This is the first Javascript project I have built from scratch and hosted somewhere and was a great way to start learning more about the very basics of web development and the Javascript language.</description>
+    </item>
+    
+    <item>
+      <title>Installing GROMACS on the UC Davis FARM cluster: or install GROMACS without sudo privileges.</title>
+      <link>https://ethanholleman.com/posts/gromacs_install/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/gromacs_install/</guid>
+      <description>Are you using the UC Davis FARM for molecular modeling and need to figure out how to setup GROMACS? Well hello extremely small subset of the population! This is the guide for you.
+Note, this is only for a basic installation. For maximum performance refer to the GROMACS guide linked above.
+Getting started We will be working off the installation instructions on the GROMACS website but will modify a few steps to deal with the quirks of the FARM at the time of writing and the fact you will not have sudo privileges.
+If you want to cut to the chase, you can run this script, which will run all the code in this guide in one go.</description>
+    </item>
+    
+    <item>
+      <title>Day trip to Yosemite</title>
+      <link>https://ethanholleman.com/posts/yosemite/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/yosemite/</guid>
+      <description>Day trip to Yosemite National Park.
+Hike up to mirror lake Campground near Curry Village
+Good advice.
+Ethan with log on the trail.
+Erica with boulder.
+Moss 1.
+Moss 2.
+Moss 3 (lots of interesting mosses).
+At mirror lake Mirror Lake visitor info placard.
+Mirror lake facing Northwest towards Mt. Watkins.
+Half Dome.
+Ethan and Erica in front of Half Dome.
+Interesting log, ground in the log&amp;rsquo;s shadow remained frozen.
+Panoramic view facing Northeast with (from left to right) Mt. Watkins, Ahwiyah Point and Half Dome in view.</description>
+    </item>
+    
+    <item>
+      <title>Make custom Skribbl.io word banks using Reddit and Praw</title>
+      <link>https://ethanholleman.com/posts/skribbl.io_words/</link>
+      <pubDate>Mon, 28 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/skribbl.io_words/</guid>
+      <description>Skribbl.io is a great free quarantine / social distanced game where one person attempts to draw a word while everyone else guesses what they are drawing. When setting up the game you can supply your own list of comma separated words doing the game.
+The problem with doing this manually is that one person playing will know all the words.
+For an upcoming Zoom party I created a python command line application that takes in subreddit names and a few other parameters and using the Praw library retrieves the most commonly used words from the top comments of posts to a subreddit.</description>
+    </item>
+    
+    <item>
+      <title>Plotting COVID-19 Hospitalization Geo-Spacial Data</title>
+      <link>https://ethanholleman.com/posts/covid_data/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/covid_data/</guid>
+      <description>After finding the COG-UK data I was looking around for other interesting COVID-19 datasets to play around with and build my R plotting skills with.
+User moritz.kraemer posted this article on early case descriptions which included a lot of geo-spacial data that I was interested in takeing a look at.
+There was a significant number of fields devoted to hospitalization related measurements and so I focused on that subject for the plot below.
+The dataset includes patients with and without hospitalization records and so first I filtered down to just those with records and those who also had location data. This subset of patients formed subplot A.</description>
+    </item>
+    
+    <item>
+      <title>Plotting COG-UK Data</title>
+      <link>https://ethanholleman.com/posts/cog_sars/</link>
+      <pubDate>Mon, 21 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/cog_sars/</guid>
+      <description>The Covid-19 Genomics UK Consortium has been collecting and sequencing thousands of COVID-19 genomes from patients in the UK and around the world.
+All of their data is publicly available. Here I played around with the phylogenetic tree they have created from global alignments of all the genomes they have sequenced.
+You can download the tree in Newick format from their data page which also hosts sequences and the alignment files.
+Visualizing the COVID-19 phylogenetic tree by country of origin Genome count by country Note this plot is log scale in the y-axis.
+16 most prevalent UK COVID-19 lineages Density plots showing the number of genomes of the 16 most prevalent lineages detected by COG-UK.</description>
+    </item>
+    
+    <item>
+      <title>2020 Christmas Card Bonus Pictures</title>
+      <link>https://ethanholleman.com/posts/christmas_card/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/christmas_card/</guid>
+      <description>Apartment Tour Taken right after move in.
+Skys during the wildfires Those are not clouds.
+Davis campus cows Around Davis Hiking in Winters, CA
+Fishing at Putah Creek
+Thanksgiving Bubbles Lots cat pictures have been taken
+California changes a man </description>
+    </item>
+    
+    <item>
+      <title>Poker Nights Running Results</title>
+      <link>https://ethanholleman.com/posts/running_winnings/</link>
+      <pubDate>Fri, 18 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/running_winnings/</guid>
+      <description>Y axis of all plots are unit-less.
+Running stack sizes Shows each players cumulative stack over all nights played.
+Winnings by date Plot of each players winnings (stack at the end of the round - buy in) over time.
+All games have been played virtually, for info on how we host these see this post.</description>
+    </item>
+    
+    <item>
+      <title>Casual virtual Poker with Zoom and PlayingCards.io</title>
+      <link>https://ethanholleman.com/posts/zoom_poker/</link>
+      <pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/zoom_poker/</guid>
+      <description>Update I recently found a number of .io type websites devoted specifically to poker (not sure why didn&amp;rsquo;t think to search poker .io earlier) which get around the main issues of playing using playingcards.io.
+I would highly, highly recommend using lipoker.io. It handles betting with shortcuts for bets based on pot or blind sizes, handles turns automatically and does not require a sign up.
+For Poker, lipoker is supporior in every way to PlayingCards.io due to being designed for this specific game. If for some reason you would still like to use PlayingCards.io continue reading, otherwise stop and use lipoker.io.</description>
+    </item>
+    
+    <item>
+      <title>Data and the Vietnam War</title>
+      <link>https://ethanholleman.com/posts/vietnam_data/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/vietnam_data/</guid>
+      <description>Turning the jungle into punch cards During the early optimistic days of the summer 2020 quarantine I watched Ken Burn&amp;rsquo;s fantastic 10 part 18-hour series on the Vietnam war. It is by far the most accessible and compressive body of work on the subject. Burn&amp;rsquo;s starts you off pre-WWI so you really get a comprehensive picture of things.
+One of the aspects of the war that fascinated me the most was the push by the the then Secretary of Defense, Robert McNamara, to quantify as much of the war as was computationally possible. One of the most storage intensive of McNamara&amp;rsquo;s efforts was the Hamlet Evaluation System, which attempted to quantify the degree to which ~12,000 small, rural Vietnamese villages had been pacified.</description>
+    </item>
+    
+    <item>
+      <title>Fishing at Putah Creek</title>
+      <link>https://ethanholleman.com/posts/putah_fishing/</link>
+      <pubDate>Sat, 28 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/putah_fishing/</guid>
+      <description>Day trip out to Putah Creek in Winters CA.
+A few turkeys we saw before leaving Davis.
+The spot in the creek we picked out.
+Erica practicing casting.
+Testing out the waders.</description>
+    </item>
+    
+    <item>
+      <title>Using local R packages on UC Davis Genome Center cluster</title>
+      <link>https://ethanholleman.com/posts/genome_cluster/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/genome_cluster/</guid>
+      <description>I ran into a few issues trying to figure out how to run batch scripts on the Genome Center cluster. One of the least documented and hardest to figure out was how to successfully load R packages I had installed to my user directory.
+For example I would start R and install a package I needed and load the library with no problem.
+The code below would run without a problem.
+install.packages(&amp;quot;glmnet&amp;quot;) library(glmnet) But then calling the running the same script from a batch file fails to import the library.
+I tried multiple possible fixes with no success until I was tipped of by a current lab member about the magic word.</description>
+    </item>
+    
+    <item>
+      <title>Letter to D113 school board</title>
+      <link>https://ethanholleman.com/posts/letter_to_d113/</link>
+      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/letter_to_d113/</guid>
+      <description>This was a letter I wrote to my local high school district board during the early days of lock down titled &amp;ldquo;Creative Approaches in This Coming School Year&amp;rdquo;.
+This browser does not support PDFs. Please download the PDF to view it: Download PDF.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ethanholleman.com/posts/should-i-buy-3d-printer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ethanholleman.com/posts/should-i-buy-3d-printer/</guid>
+      <description>Should you buy a 3D printer in 2023? There are an increasing number of short form videos floating around showing people creating various objects with their 3D printers. These are great at increasing the visibility of this frankly incredible technology but as with most infomration in this format. It fails to convey the whole story behind 3D printer ownership.
+So I wanted to put this post out there as someone who has (according to my printer statistics) printed over 7.5 kilometers worth of filament in the past year and a half or so before you purchase for yourself, or someone else a new 3D printer.</description>
+    </item>
+    
+  </channel>
+</rss>
