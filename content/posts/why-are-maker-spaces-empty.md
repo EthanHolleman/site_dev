@@ -2,27 +2,28 @@
 title: "Why are (some) maker spaces so empty?"
 date: 2022-12-15
 tags: ['3D Printing', 'blogs']
-draft: true
+draft: false
 ---
 
-## Where is everyone?
+
+
+### Where is everyone?
 
 I am lucky to live within biking distance of the [Davis Craft Center](https://campusrecreation.ucdavis.edu/recreation/craft-center), an excellent facility that provides screen printing, woodworking,
 welding, and "maker" resources (3D printer, laser cutter, soldering kit, etc.) to UC
 Davis students and community members at very reasonable prices. 
 
-I only learned about the maker space at the Craft center within the last three months
-and since then have been visiting semi-regularly to work on my projects. The
-main benefit of working there for me is that it that there is significantly more
-space compared to my 1 bedroom apartment and it is cat free. This is especially
+I only learned about the maker space at the Craft center within the last three months; since then have been visiting semi-regularly to work on my projects. The
+main benefit of working there for me is that there is significantly more
+space compared to my one bedroom apartment and it is cat free. This is especially
 helpful when working with anything remotely string shaped. 
 
 Something I have noticed though is that 90% of the time, I am the only person there. So
 I usually find myself wondering, aren't there other people working on cool stuff
 that would want to use this space? Where are they? Do they just not know about it?
 
-The Craft center maker space has a 3D printer, 2 laser cutters, a vinyl cutter, a drill press, and plenty of workbench space to spread out. It is also basically free for UC Davis students.
-So where is everyone? I was talking about this with a friend who regularly uses the maker space at a local library and he had made similar antidotal observations about the seemingly low lack of
+The Craft center maker space has a 3D printer, two laser cutters, a vinyl cutter, a drill press, and plenty of workbench space to spread out. It is also basically free for UC Davis students.
+So where is everyone? I was talking about this with a friend who regularly uses the maker space at a local library. He had made similar antidotal observations about the seemingly low lack of
 utilization despite the space having the standard complement of maker equipment. 
 
 ### Focus on onboarding
@@ -33,7 +34,7 @@ does not appeal to those who already have a moderate degree of "maker" experienc
 
 For example, I am relatively proficient in the usual "maker" complement of skills; I own
 (and am continually operating) a 3D printer, have the knowledge and kit to
-put together basic electronics, and know how to use standard shop tools. Often 
+put together basic electronics, and know how to use standard shop tools. Often, 
 local maker spaces (like the Davis Craft Center) do not offer equipment that goes
 much beyond this. Why would I use a public 3D printer that I have very little control
 over when I own one myself? Why bike to the craft center to solder up a board when
